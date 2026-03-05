@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* Design Tokens */
+:root {
+  --color-primary: #1d2554;
+  --color-primary-hover: #374785;
+  --color-surface: #fafafa;
+  --color-text: #2d2d2d;
+  --color-accent: #c5a059;
+  --color-border: black;
+  --spacing-table: 1.75rem;
+  --code-bg: #141414;
+}
+
+/* Resetear html para que el height funcione */
+html {
+  height: 100%;
+}
+
+/* Estilo del body */
+body {
+  font-family:
+    "Latin Modern Roman", "Computer Modern", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2d2d2d;
+  background-color: #fafafa;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* El contenedor root también debe ocupar el 100% */
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* ========================================
+   Bloques de Código
+   ======================================== */
+.code-box {
+  background: var(--code-bg);
+  border-radius: 12px;
+  margin: 24px 0;
+  overflow: hidden;
+  width: 80%;
+  margin: 24px auto;
+}
+
+.code-header {
+  background: #262626;
+  padding: 12px 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.code-box pre {
+  padding: 24px;
+  margin: 0;
+  overflow-x: auto;
+  font-family:
+    "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+}
+
+.code-box code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Sintaxis highlight básico */
+.code-box .keyword {
+  color: #ff79c6;
+}
+.code-box .string {
+  color: #f1fa8c;
+}
+.code-box .comment {
+  color: #6272a4;
+}
+.code-box .number {
+  color: #bd93f9;
+}
+.code-box .function {
+  color: #50fa7b;
+}
