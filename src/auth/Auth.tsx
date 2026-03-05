@@ -1,6 +1,6 @@
-import React from "react";
+import { type ReactNode } from "react";
 import { create } from "zustand";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 interface AuthState {
   user: { username: string } | null;
@@ -14,12 +14,11 @@ const useAuthStore = create<AuthState>((set) => ({
 
 function useAuth() {
   const { user, setUser } = useAuthStore();
-  const navigate = useNavigate();
 
   const login = (username: string) => {
     setUser({ username });
-    navigate("/");
   };
+
   const logout = () => {
     setUser(null);
   };
@@ -27,14 +26,15 @@ function useAuth() {
   return { user, login, logout };
 }
 
-function AuthRoute({ children }: { children: React.ReactNode }) {
+// Ruta protegida: redirige a /login si no hay sesión activa.
+function AuthRoute({ children }: { children: ReactNode }) {
   const { user } = useAuthStore();
   if (!user) {
     return <Navigate to="/login" />;
   }
 
-  return children;
+  return <>{children}</>;
 }
 
-// eslint-disable-next-line
+// eslint-disable-next-line react-refresh/only-export-components
 export { AuthRoute, useAuth };

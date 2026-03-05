@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titulo": "Introducción",
+    "descripcion": "Problemas a tratar durante la materia. Material obligatorio.",
+    "link": "/introduccion"
+  },
+  {
+    "id": 2,
+    "titulo": "Introducción a la algoritmia y a la programación",
+    "descripcion": "Metodología de resolución de problemas. Concepto de algoritmo. Concepto de Programa. Concepto de lenguaje de programación. Python.",
+    "link": "/introduccion-algoritmia-programacion"
+  },
+  {
+    "id": 3,
+    "titulo": "Tipos de datos, expresiones y funciones",
+    "descripcion": "Números. Cadenas. Booleano. Funciones. Comentarios. Operadores. Expresiones.",
+    "link": "/tipos-datos-expresiones-funciones"
+  },
+  {
+    "id": 4,
+    "titulo": "Estructuras de control",
+    "descripcion": "Estructuras de control: Concepto. Estructuras condicionales: if, else, elif. Estructuras de control iterativas: while, for, range.",
+    "link": "/estructuras-control"
+  },
+  {
+    "id": 5,
+    "titulo": "Tipos de datos estructurados",
+    "descripcion": "Tipos de datos estructurados. Secuencias: tuplas y listas. Listas. Operaciones con listas. Mutabilidad. Diccionarios.",
+    "link": "/tipos-datos-estructurados"
+  },
+  {
+    "id": 6,
+    "titulo": "Entrada y salida de información",
+    "descripcion": "Manejo de archivos. Manejo de errores.",
+    "link": "/entrada-salida-informacion"
+  },
+  {
+    "id": 7,
+    "titulo": "Bibliotecas",
+    "descripcion": "Bibliotecas: Concepto. Uso de bibliotecas. Import. Introducción al análisis exploratorio de datos con Pandas. Visualizaciones básicas con Matplotlib.",
+    "link": "/bibliotecas"
+  }
+]
