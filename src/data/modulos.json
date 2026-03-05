@@ -7,38 +7,50 @@
   },
   {
     "id": 2,
-    "titulo": "Introducción a la algoritmia y a la programación",
-    "descripcion": "Metodología de resolución de problemas. Concepto de algoritmo. Concepto de Programa. Concepto de lenguaje de programación. Python.",
-    "link": "/introduccion-algoritmia-programacion"
+    "titulo": "La Medición",
+    "descripcion": "Unidades fundamentales. Múltiplos y submúltiplos. La medición en física. Cifras significativas. Órdenes de magnitud.",
+    "link": "/la-medicion"
   },
   {
     "id": 3,
-    "titulo": "Tipos de datos, expresiones y funciones",
-    "descripcion": "Números. Cadenas. Booleano. Funciones. Comentarios. Operadores. Expresiones.",
-    "link": "/tipos-datos-expresiones-funciones"
+    "titulo": "Magnitudes Física",
+    "descripcion": "Magnitudes escalares y vectoriales. Operaciones con vectores (suma, resta, multiplicación por escalar, producto escalar y vectorial). Uso del sistema de coordenadas cartesianas, versores y componentes para expresar y proyectar vectores. Introducción al análisis dimensional.",
+    "link": "/magnitudes-fisica"
   },
   {
     "id": 4,
-    "titulo": "Estructuras de control",
-    "descripcion": "Estructuras de control: Concepto. Estructuras condicionales: if, else, elif. Estructuras de control iterativas: while, for, range.",
-    "link": "/estructuras-control"
+    "titulo": "Estática",
+    "descripcion": "Fuerza. Unidades de medida. Cuerpos puntuales: resultante y equilibrante. Cuerpos extensos: centro de gravedad, resultante y momento neto. Condiciones de equilibrio, reacciones de vínculo y funcionamiento de máquinas simples.",
+    "link": "/estatica"
   },
   {
     "id": 5,
-    "titulo": "Tipos de datos estructurados",
-    "descripcion": "Tipos de datos estructurados. Secuencias: tuplas y listas. Listas. Operaciones con listas. Mutabilidad. Diccionarios.",
-    "link": "/tipos-datos-estructurados"
+    "titulo": "Hidrostática",
+    "descripcion": "Densidad. Presión. Unidades. Fluido. Fluido ideal. Principio de Pascal. Prensa hidráulica. Teorema fundamental de la hidrostática. Experiencia de Torricelli. Presión absoluta y manométrica. Teorema de Arquímedes. Flotación y empuje. Peso aparente.",
+    "link": "/hidrostatica"
   },
   {
     "id": 6,
-    "titulo": "Entrada y salida de información",
-    "descripcion": "Manejo de archivos. Manejo de errores.",
-    "link": "/entrada-salida-informacion"
+    "titulo": "Cinemática en una dimensión",
+    "descripcion": "Punto material o Partícula. Referencia y coordenadas. Posición, desplazamiento, distancia, trayectoria. Velocidad media, instantánea y rapidez. Unidades. Aceleración media e instantánea. Ecuaciones horarias. Movimiento rectilíneo. Gráficos r(t), v(t) y a(t). Interpretaciones gráficas.",
+    "link": "/cinematica-una-dimension"
   },
   {
     "id": 7,
-    "titulo": "Bibliotecas",
-    "descripcion": "Bibliotecas: Concepto. Uso de bibliotecas. Import. Introducción al análisis exploratorio de datos con Pandas. Visualizaciones básicas con Matplotlib.",
-    "link": "/bibliotecas"
+    "titulo": "Cinemática en dos dimensiones",
+    "descripcion": "Movimiento vectorial en el plano: coordenadas intrínsecas, aceleración tangencial, normal y total. Tiro oblicuo. Movimiento circular: período y frecuencia, velocidad y aceleración angular. Movimiento relativo.",
+    "link": "/cinematica-dos-dimensiones"
+  },
+  {
+    "id": 8,
+    "titulo": "Dinámica",
+    "descripcion": "Fuerza. Clasificación de las fuerzas fundamentales. Leyes de Newton. Peso y masa. Fuerzas de contacto (normal y rozamiento), elástica y gravitatoria. Sistemas inerciales y no inerciales. Fuerzas ficticias: de arrastre y centrífuga. Peralte, péndulo cónico, movimiento oscilatorio armónico, péndulo simple, masa-resorte.",
+    "link": "/dinamica"
+  },
+  {
+    "id": 9,
+    "titulo": "Trabajo y Energía",
+    "descripcion": "Energía cinética. Trabajo de fuerzas. Potencia. Teorema del trabajo y la energía cinética. Fuerzas conservativas y no conservativas. Energía potencial: gravitatoria y elástica. Teorema de conservación de la energía mecánica. Aplicaciones.",
+    "link": "/trabajo-y-energia"
   }
 ]

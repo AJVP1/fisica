@@ -10,11 +10,13 @@ const Bienvenida = () => {
       <h1 className="text-2xl md:text-4xl font-bold text-[#1d2554] text-center mt-6">
         Física CBC
       </h1>
-      <p className="mx-auto text-sm sm:text-base md:text-lg mt-10 text-left md:text-justify">
-        La materia estudia cómo interactúan los agentes económicos cuando
-        existen interdependencias estratégicas, incertidumbre e información
-        imperfecta. Su eje central es la teoría de juegos, aplicada a problemas
-        de coordinación, incentivos y fallas de mercado.
+      <p className="mx-auto text-sm sm:text-base md:text-lg mt-5 text-left md:text-justify">
+        En el CBC de la Universidad de Buenos Aires, la materia Física busca que
+        los estudiantes comprendan los conceptos básicos de la mecánica y
+        aprendan a aplicarlos para resolver problemas, desarrollando
+        razonamiento lógico, análisis y herramientas matemáticas y de cómputo.
+        Estos conocimientos sirven como base para carreras de ingeniería,
+        ciencias exactas y áreas relacionadas.
       </p>
 
       <h2 className="mt-6 text-[#1d2554] font-semibold text-sm md:text-base">
