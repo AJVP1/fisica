@@ -3,8 +3,8 @@ import { create } from "zustand";
 import { Navigate } from "react-router-dom";
 
 interface AuthState {
-  user: { username: string } | null;
-  setUser: (user: { username: string } | null) => void;
+  user: { password: string } | null;
+  setUser: (user: { password: string } | null) => void;
 }
 
 const useAuthStore = create<AuthState>((set) => ({
@@ -15,8 +15,8 @@ const useAuthStore = create<AuthState>((set) => ({
 function useAuth() {
   const { user, setUser } = useAuthStore();
 
-  const login = (username: string) => {
-    setUser({ username });
+  const login = (password: string) => {
+    setUser({ password });
   };
 
   const logout = () => {
