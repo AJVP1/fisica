@@ -30,6 +30,13 @@ body {
   margin: 0;
 }
 
+/* Párrafos */
+@layer base {
+  p {
+    @apply mt-2 text-sm sm:text-base md:text-lg;
+  }
+}
+
 /* El contenedor root también debe ocupar el 100% */
 #root {
   height: 100%;
