@@ -30,9 +30,9 @@ body {
   margin: 0;
 }
 
-/* Párrafos */
+/* Párrafos y listas */
 @layer base {
-  p {
+  p, li {
     @apply mt-2 text-sm sm:text-base md:text-lg;
   }
 }
