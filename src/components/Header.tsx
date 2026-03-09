@@ -10,8 +10,8 @@ const Header = () => {
       <Link className="flex items-center gap-4" to="/">
         <img src={logo} alt="Logo" className="brightness-0 invert w-16 h-16" />
         <div>
-          <p>Universidad de Buenos Aires</p>
-          <p className="text-base text-white/85 font-medium">
+          <p className="mt-0">Universidad de Buenos Aires</p>
+          <p className="text-base text-white/85 font-medium mt-0">
             Facultad de Ciencias Exactas y Naturales
           </p>
         </div>
