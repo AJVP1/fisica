@@ -40,23 +40,23 @@ const Introduccion = () => {
         Objetivos:
       </h2>
       <ul className="list-disc text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8">
-        <li className="mt-2 text-sm sm:text-base md:text-lg">
+        <li>
           Relacionar los conceptos de la física con el funcionamiento del mundo
           circundante.
         </li>
-        <li className="mt-2 text-sm sm:text-base md:text-lg">
+        <li>
           Comprender los rudimentos de la mecánica a fin de aplicarlos en
           desarrollos ulteriores y resolver situaciones problemáticas.
         </li>
-        <li className="mt-2 text-sm sm:text-base md:text-lg">
+        <li>
           Incorporar conocimientos de la mecánica de puntos materiales y cuerpos
           extensos.
         </li>
-        <li className="mt-2 text-sm sm:text-base md:text-lg">
+        <li>
           Distinguir el rango de validez de los modelos de la realidad con los
           que trabaja la física.
         </li>
-        <li className="mt-2 text-sm sm:text-base md:text-lg">
+        <li>
           Interpretar y confeccionar gráficos y extraer información física a
           partir de enunciados coloquiales.
         </li>
@@ -67,10 +67,8 @@ const Introduccion = () => {
       </h2>
       <ol className="list-decimal text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8">
         {modulos.map((modulo) => (
-          <li key={modulo.id} className="mt-1">
-            <h3 className="mt-2 text-sm sm:text-base md:text-lg">
-              {modulo.titulo}
-            </h3>
+          <li key={modulo.id}>
+            <h3>{modulo.titulo}</h3>
           </li>
         ))}
       </ol>
