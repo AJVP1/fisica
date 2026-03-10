@@ -6,7 +6,7 @@ import { MathJax } from "better-react-mathjax";
 import ContactSection from "../../components/Contacto";
 
 const Unidad2 = () => {
-  const ejercicios = Array.from({ length: 28 }, (_, i) => i + 1);
+  const ejercicios = Array.from({ length: 10 }, (_, i) => i + 1);
 
   return (
     <MathJax>
@@ -119,8 +119,12 @@ const Unidad2 = () => {
         <table className="w-72 border-collapse text-sm sm:text-base mt-2 mb-4 mx-auto rounded-lg overflow-hidden shadow-md">
           <thead>
             <tr className="bg-[#1d2554] text-white">
-              <th className="px-4 py-2.5 text-left font-semibold italic">Cantidad</th>
-              <th className="px-4 py-2.5 text-left font-semibold italic">Unidad</th>
+              <th className="px-4 py-2.5 text-left font-semibold italic">
+                Cantidad
+              </th>
+              <th className="px-4 py-2.5 text-left font-semibold italic">
+                Unidad
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -128,10 +132,38 @@ const Unidad2 = () => {
               { cantidad: "masa", unidad: "kg" },
               { cantidad: "tiempo", unidad: "s" },
               { cantidad: "longitud", unidad: "m" },
-              { cantidad: "área", unidad: <span>m<sup>2</sup></span> },
-              { cantidad: "volumen", unidad: <span>m<sup>3</sup></span> },
-              { cantidad: <span>velocidad (<i>v</i>)</span>, unidad: "\\(\\dfrac{\\text{m}}{\\text{s}}\\)" },
-              { cantidad: <span>aceleración (<i>a</i> o <i>g</i>)</span>, unidad: "\\(\\dfrac{\\text{m}}{\\text{s}^2}\\)" },
+              {
+                cantidad: "área",
+                unidad: (
+                  <span>
+                    m<sup>2</sup>
+                  </span>
+                ),
+              },
+              {
+                cantidad: "volumen",
+                unidad: (
+                  <span>
+                    m<sup>3</sup>
+                  </span>
+                ),
+              },
+              {
+                cantidad: (
+                  <span>
+                    velocidad (<i>v</i>)
+                  </span>
+                ),
+                unidad: "\\(\\dfrac{\\text{m}}{\\text{s}}\\)",
+              },
+              {
+                cantidad: (
+                  <span>
+                    aceleración (<i>a</i> o <i>g</i>)
+                  </span>
+                ),
+                unidad: "\\(\\dfrac{\\text{m}}{\\text{s}^2}\\)",
+              },
             ].map(({ cantidad, unidad }, i) => (
               <tr
                 key={i}
