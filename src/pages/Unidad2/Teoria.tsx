@@ -58,24 +58,24 @@ const Unidad2 = () => {
           </thead>
           <tbody>
             {[
-              { multiplo: "\\(10^{12}\\)", prefijo: "tera- (T)", bold: false },
-              { multiplo: "\\(10^{9}\\)", prefijo: "giga- (G)", bold: false },
-              { multiplo: "\\(10^{6}\\)", prefijo: "mega- (M)", bold: true },
-              { multiplo: "\\(10^{3}\\)", prefijo: "kilo- (k)", bold: true },
-              { multiplo: "\\(10^{2}\\)", prefijo: "hecto- (h)", bold: false },
-              { multiplo: "\\(10\\)", prefijo: "deca- (da)", bold: false },
-              { multiplo: "\\(10^{-1}\\)", prefijo: "deci- (d)", bold: false },
-              { multiplo: "\\(10^{-2}\\)", prefijo: "centi- (c)", bold: true },
-              { multiplo: "\\(10^{-3}\\)", prefijo: "mili- (m)", bold: true },
-              { multiplo: "\\(10^{-6}\\)", prefijo: "micro- (μ)", bold: true },
-              { multiplo: "\\(10^{-9}\\)", prefijo: "nano- (n)", bold: false },
-              { multiplo: "\\(10^{-12}\\)", prefijo: "pico- (p)", bold: false },
+              { multiplo: "$10^{12}$", prefijo: "tera- (T)", bold: false },
+              { multiplo: "$10^{9}$", prefijo: "giga- (G)", bold: false },
+              { multiplo: "$10^{6}$", prefijo: "mega- (M)", bold: true },
+              { multiplo: "$10^{3}$", prefijo: "kilo- (k)", bold: true },
+              { multiplo: "$10^{2}$", prefijo: "hecto- (h)", bold: false },
+              { multiplo: "$10$", prefijo: "deca- (da)", bold: false },
+              { multiplo: "$10^{-1}$", prefijo: "deci- (d)", bold: false },
+              { multiplo: "$10^{-2}$", prefijo: "centi- (c)", bold: true },
+              { multiplo: "$10^{-3}$", prefijo: "mili- (m)", bold: true },
+              { multiplo: "$10^{-6}$", prefijo: "micro- (μ)", bold: true },
+              { multiplo: "$10^{-9}$", prefijo: "nano- (n)", bold: false },
+              { multiplo: "$10^{-12}$", prefijo: "pico- (p)", bold: false },
               {
-                multiplo: "\\(10^{-15}\\)",
+                multiplo: "$10^{-15}$",
                 prefijo: "femto- (f)",
                 bold: false,
               },
-              { multiplo: "\\(10^{-18}\\)", prefijo: "atto- (a)", bold: false },
+              { multiplo: "$10^{-18}$", prefijo: "atto- (a)", bold: false },
             ].map(({ multiplo, prefijo, bold }, i) => (
               <tr
                 key={i}
@@ -154,7 +154,7 @@ const Unidad2 = () => {
                     velocidad (<i>v</i>)
                   </span>
                 ),
-                unidad: "\\(\\dfrac{\\text{m}}{\\text{s}}\\)",
+                unidad: "$$\\dfrac{\\text{m}}{\\text{s}}$$",
               },
               {
                 cantidad: (
@@ -162,7 +162,7 @@ const Unidad2 = () => {
                     aceleración (<i>a</i> o <i>g</i>)
                   </span>
                 ),
-                unidad: "\\(\\dfrac{\\text{m}}{\\text{s}^2}\\)",
+                unidad: "$$\\dfrac{\\text{m}}{\\text{s}^2}$$",
               },
             ].map(({ cantidad, unidad }, i) => (
               <tr
