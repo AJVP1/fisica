@@ -42,6 +42,9 @@ body {
   ol {
     @apply list-decimal list-inside mt-2;
   }
+  ul {
+    @apply list-disc list-inside mt-2;
+  }
   h4 {
     @apply mt-4 text-sm sm:text-base md:text-lg font-bold;
   }
