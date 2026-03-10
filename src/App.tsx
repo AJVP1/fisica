@@ -35,7 +35,7 @@ const LoadingComponent = () => (
 
 function App() {
   return (
-    <MathJaxContext>
+    <MathJaxContext config={{ tex: { inlineMath: [["$", "$"]] } }}>
       <HashRouter>
         <Header />
 
