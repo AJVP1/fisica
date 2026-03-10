@@ -35,6 +35,9 @@ body {
   p, li {
     @apply mt-2 text-sm sm:text-base md:text-lg;
   }
+  h3 {
+    @apply text-xl sm:text-2xl font-semibold mt-6;
+  }
 }
 
 /* El contenedor root también debe ocupar el 100% */
