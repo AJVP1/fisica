@@ -12,7 +12,7 @@ const Unidad2 = () => {
     <MathJax>
       <section className="bg-[#fafafa] max-w-270 mx-auto p-3 sm:p-4 md:p-6">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#1d2554] mt-6">
-          Juegos Estáticos con información completa
+          La medición
         </h2>
 
         <h3 className="text-[#1d2554]">Teoría</h3>
