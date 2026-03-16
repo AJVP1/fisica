@@ -8,16 +8,18 @@ import Header from "./components/Header";
 
 // importaciones de rutas
 import Router2 from "./routes/Router2";
+import Router3 from "./routes/Router3";
 
 // importaciones de páginas
 import Bienvenida from "./pages/Bienvenida";
 const Introduccion = lazy(() => import("./pages/Introduccion"));
+const Unidad2 = lazy(() => import("./pages/Unidad2/Teoria"));
+const Unidad3 = lazy(() => import("./pages/Unidad3/Teoria"));
 
 // importaciones de auth
 import LoginPage from "./auth/LoginPage";
 import LogoutPage from "./auth/LogoutPage";
 import { AuthRoute } from "./auth/Auth";
-import Unidad2 from "./pages/Unidad2/Teoria";
 
 // Componente de carga
 const LoadingComponent = () => (
@@ -53,6 +55,17 @@ function App() {
               }
             >
               <Route path=":slug" element={<Router2 />} />
+            </Route>
+
+            <Route
+              path="/magnitudes-fisica"
+              element={
+                <AuthRoute>
+                  <Unidad3 />
+                </AuthRoute>
+              }
+            >
+              <Route path=":slug" element={<Router3 />} />
             </Route>
 
             <Route path="/login" element={<LoginPage />} />
