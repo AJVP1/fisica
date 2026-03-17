@@ -6,7 +6,7 @@ import { MathJax } from "better-react-mathjax";
 import ContactSection from "../../components/Contacto";
 
 const Unidad2 = () => {
-  const ejercicios = Array.from({ length: 9 }, (_, i) => i + 1);
+  const ejercicios = Array.from({ length: 8 }, (_, i) => i + 1);
 
   return (
     <MathJax>
