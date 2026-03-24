@@ -3,6 +3,13 @@ import { useParams } from "react-router-dom";
 
 const ejerciciosMap = {
   "ejercicio-1": lazy(() => import("../pages/Unidad3/E1")),
+  "ejercicio-2": lazy(() => import("../pages/Unidad3/E2")),
+  "ejercicio-3": lazy(() => import("../pages/Unidad3/E3")),
+  "ejercicio-4": lazy(() => import("../pages/Unidad3/E4")),
+  "ejercicio-5": lazy(() => import("../pages/Unidad3/E5")),
+  "ejercicio-6": lazy(() => import("../pages/Unidad3/E6")),
+  "ejercicio-7": lazy(() => import("../pages/Unidad3/E7")),
+  "ejercicio-8": lazy(() => import("../pages/Unidad3/E8")),
 };
 
 function Router3() {

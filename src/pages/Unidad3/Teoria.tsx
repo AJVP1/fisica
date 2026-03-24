@@ -165,7 +165,7 @@ const Unidad2 = () => {
           {ejercicios.map((numero) => (
             <Link
               key={numero}
-              to={`/la-medicion/ejercicio-${numero}`}
+              to={`/magnitudes-fisica/ejercicio-${numero}`}
               className="bg-[#1d2554] text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-sm sm:text-base rounded mt-4 hover:bg-[#374785] transition-colors"
             >
               {`Ejercicio ${numero}`}
