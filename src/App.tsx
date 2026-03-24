@@ -9,12 +9,14 @@ import Header from "./components/Header";
 // importaciones de rutas
 import Router2 from "./routes/Router2";
 import Router3 from "./routes/Router3";
+import Router4 from "./routes/Router4";
 
 // importaciones de páginas
 import Bienvenida from "./pages/Bienvenida";
 const Introduccion = lazy(() => import("./pages/Introduccion"));
 const Unidad2 = lazy(() => import("./pages/Unidad2/Teoria"));
 const Unidad3 = lazy(() => import("./pages/Unidad3/Teoria"));
+const Unidad4 = lazy(() => import("./pages/Unidad4/Teoria"));
 
 // importaciones de auth
 import LoginPage from "./auth/LoginPage";
@@ -66,6 +68,17 @@ function App() {
               }
             >
               <Route path=":slug" element={<Router3 />} />
+            </Route>
+
+            <Route
+              path="/estatica"
+              element={
+                <AuthRoute>
+                  <Unidad4 />
+                </AuthRoute>
+              }
+            >
+              <Route path=":slug" element={<Router4 />} />
             </Route>
 
             <Route path="/login" element={<LoginPage />} />
