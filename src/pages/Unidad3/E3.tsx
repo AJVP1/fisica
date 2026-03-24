@@ -13,11 +13,11 @@ function Ejercicio3() {
       <ul>
         <li>
           {
-            "La magnitud y dirección del producto vectorial $$\\vec{a} \\times \\vec{d}$$"
+            "La magnitud y dirección del producto vectorial de  $\\vec{a} \\times \\vec{d}$"
           }
         </li>
         <li>
-          {"Calcule la dirección y magnitud de $$\\vec{d} \\times \\vec{a}$$"}
+          {"Calcule la dirección y magnitud de  $\\vec{d} \\times \\vec{a}$"}
         </li>
       </ul>
       <h3>Solución</h3>

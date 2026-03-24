@@ -18,14 +18,18 @@ function Ejercicio6() {
         seno. El ángulo de 32 grados se encuentra a partir del eje y, por lo que
         el componente x se puede calcular como:
       </p>
-      <p>{"$$ x = y / \\tan(122°) = 13 / \\tan(32°) \\approx -8.08 $$"}</p>
+      <p>
+        {
+          "$$ x = \\frac{y}{\\tan(122°)} = \\frac{13}{\\tan(32°)} \\approx -8.12 $$"
+        }
+      </p>
       <p>
         Para encontrar la magnitud del vector, podemos usar el teorema de
         Pitágoras.
       </p>
       <p>
         {
-          "$$ m = \\sqrt{x^2 + y^2} = \\sqrt{(-8.08)^2 + 13^2} \\approx 15.36 $$"
+          "$$ m = \\sqrt{x^2 + y^2} = \\sqrt{(-8.12)^2 + 13^2} \\approx 15.33 $$"
         }
       </p>
     </ExerciseLayout>

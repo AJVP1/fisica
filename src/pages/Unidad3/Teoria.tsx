@@ -158,6 +158,38 @@ const Unidad2 = () => {
           formado por los dos vectores.
         </p>
 
+        <h4>Trigonometría</h4>
+        <p>
+          Vamos a agregar unas funciones trigonométricas que serán necesarias
+          para el desarrollo de la materia.
+        </p>
+        <p>
+          Dado un triángulo rectángulo con ángulo $\theta$, cateto opuesto $y$,
+          cateto adyacente $x$ e hipotenusa $h$, las funciones trigonométricas
+          fundamentales se definen como:
+        </p>
+        <p>{`$$\\sin\\theta = \\frac{y}{h}, \\quad \\cos\\theta = \\frac{x}{h}, \\quad \\tan\\theta = \\frac{y}{x}$$`}</p>
+        <p>
+          Estas relaciones permiten descomponer un vector en sus componentes
+          cartesianas. Si un vector {`$\\vec{v}$`} tiene módulo {`$|\\vec{v}|$`}{" "}
+          y forma un ángulo {`$\\theta$`} con el eje $x$, entonces:
+        </p>
+        <p>{`$$v_x = |\\vec{v}|\\cos\\theta, \\quad v_y = |\\vec{v}|\\sin\\theta$$`}</p>
+        <p>
+          Inversamente, dado un vector de componentes $(v_x, v_y)$, su módulo y
+          ángulo se obtienen como:
+        </p>
+        <p>{`$$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}, \\quad \\theta = \\arctan\\!\\left(\\frac{v_y}{v_x}\\right)$$`}</p>
+        <p>
+          Nota: en el segundo y tercer cuadrante se debe sumar 180° al ángulo
+          obtenido.
+        </p>
+        <p>
+          La identidad trigonométrica fundamental, que se deduce directamente
+          del teorema de Pitágoras, es:
+        </p>
+        <p>{`$$\\sin^2\\theta + \\cos^2\\theta = 1$$`}</p>
+
         {/* Practica */}
         <h3 className="text-[#1d2554]">Práctica</h3>
         <hr />

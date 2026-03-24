@@ -11,9 +11,9 @@ function Ejercicio4() {
         dirección de:
       </p>
       <ul>
-        <li>{"$$\\vec{a} + \\vec{b}$$"}</li>
-        <li>{"$$\\vec{a} - \\vec{b}$$"}</li>
-        <li>{"$$\\vec{b} - \\vec{a}$$"}</li>
+        <li>{"$\\vec{a} + \\vec{b}$"}</li>
+        <li>{"$\\vec{a} - \\vec{b}$"}</li>
+        <li>{"$\\vec{b} - \\vec{a}$"}</li>
       </ul>
       <h3>Solución</h3>
       <p>Primero buscamos los componentes de los vectores</p>
