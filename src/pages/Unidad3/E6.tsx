@@ -20,7 +20,7 @@ function Ejercicio6() {
       </p>
       <p>
         {
-          "$$ x = \\frac{y}{\\tan(122°)} = \\frac{13}{\\tan(32°)} \\approx -8.12 $$"
+          "$$ x = \\frac{y}{\\tan(\\theta)} = \\frac{13}{\\tan(122°)} \\approx -8.12 $$"
         }
       </p>
       <p>
