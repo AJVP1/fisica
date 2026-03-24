@@ -5,7 +5,7 @@ import { MathJax } from "better-react-mathjax";
 // importamos componente de contacto
 import ContactSection from "../../components/Contacto";
 
-const Unidad2 = () => {
+const Unidad4 = () => {
   const ejercicios = Array.from({ length: 8 }, (_, i) => i + 1);
 
   return (
@@ -21,8 +21,26 @@ const Unidad2 = () => {
         <h4>Definición</h4>
         <p>
           La estática es la rama de la física que estudia el equilibrio de los
-          cuerpos sometidos a fuerzas. Un cuerpo está en equilibrio cuando la
-          resultante de todas las fuerzas que actúan sobre él es igual a cero.
+          cuerpos sometidos a fuerzas. Surge de la raíz griega "statos" que
+          significa "estar parado en equilibrio", lo cúal implica reposo.
+          Podemos tener "equilibrio de fuerzas" o "equilibrio de momentos".
+        </p>
+        <p>
+          Para el equilibrio de fuezas, decimos que cuando las fuerzas actúan
+          sobre un mismo punto, las llamamos fuerzas concurrentes. Mientras que
+          para el equilibrio de momentos, las fuerzas no actúan sobre un mismo
+          punto.
+        </p>
+        <p>
+          En los casos de equilibrio de fuerza concurrentes, siempre se van a
+          representar fuerzas o vectores, creando tensiones sobre un cuerpo.
+          Aquí van a ser importante las distancias, los ángulos y las
+          direcciones.
+        </p>
+        <p>
+          En los casos de equilibrio de momentos, siempre se van a representar
+          momentos o torques. Esto implica un brazo de palanca, una fuerza
+          aplicada en un extremo y un centro de giro.
         </p>
 
         <h4>Condiciones de equilibrio</h4>
@@ -44,6 +62,11 @@ const Unidad2 = () => {
           Una fuerza es una interacción que puede cambiar el estado de
           movimiento o deformar un cuerpo. Es una magnitud vectorial, por lo que
           tiene módulo, dirección y sentido.
+        </p>
+        <p>
+          Hay un tipo de fuerza que siempre aparece en los problemas de
+          estática. Es la fuerza PESO. La Tierra atrae a las cosas y quiere
+          hacer que caigan. A esta fuerza se la llama peso.
         </p>
 
         <h4>Momento de una fuerza (Torque)</h4>
@@ -80,21 +103,20 @@ const Unidad2 = () => {
 
         <h4>Tipos de equilibrio</h4>
         <p>Existen tres tipos de equilibrio:</p>
-        <p>
-          {
-            "Equilibrio estable: el cuerpo tiende a volver a su posición original tras una perturbación."
-          }
-        </p>
-        <p>
-          {
-            "Equilibrio inestable: el cuerpo se aleja de su posición original tras una perturbación."
-          }
-        </p>
-        <p>
-          {
-            "Equilibrio indiferente: el cuerpo permanece en su nueva posición tras una perturbación."
-          }
-        </p>
+        <ul>
+          <li>
+            Equilibrio estable: el cuerpo tiende a volver a su posición original
+            tras una perturbación.
+          </li>
+          <li>
+            Equilibrio inestable: el cuerpo se aleja de su posición original
+            tras una perturbación.
+          </li>
+          <li>
+            Equilibrio indiferente: el cuerpo permanece en su nueva posición
+            tras una perturbación.
+          </li>
+        </ul>
 
         {/* Practica */}
         <h3 className="text-[#1d2554]">Práctica</h3>
@@ -119,4 +141,4 @@ const Unidad2 = () => {
   );
 };
 
-export default Unidad2;
+export default Unidad4;
