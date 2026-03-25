@@ -1,4 +1,5 @@
 import ExerciseLayout from "../../components/Ejecicio";
+import estaticaE7 from "../../assets/estatica-ej7.png";
 
 function Ejercicio7() {
   return (
@@ -17,8 +18,23 @@ function Ejercicio7() {
         <li>30 grados y 30 grados</li>
         <li>60 grados y 30 grados</li>
       </ul>
+      <img
+        src={estaticaE7}
+        alt="Diagrama ejercicio 7"
+        className="block mx-auto my-4 w-full sm:w-3/4 md:w-1/2"
+      />
 
       <h3>Solución</h3>
+      <p>Haciendo el equilibrio horizontal:</p>
+      <p>{"$$ P \\cdot \\cos(\\alpha) = P \\cdot \\cos(\\beta) $$"}</p>
+      <p>$$ \alpha = \beta $$</p>
+
+      <p>Haciendo el equilibrio vertical:</p>
+      <p>{"$$ P \\cdot \\sin(\\alpha) + P \\cdot \\sin(\\beta) = P $$"}</p>
+      <p>{"$$ 2P \\cdot \\sin(\\alpha) = P $$"}</p>
+      <p>{"$$ \\sin(\\alpha) = \\frac{1}{2} $$"}</p>
+      <p>{"$$ \\alpha = 30^\\circ $$"}</p>
+      <p>{"$$ \\beta = 30^\\circ $$"}</p>
     </ExerciseLayout>
   );
 }

@@ -10,6 +10,7 @@ const ejerciciosMap = {
   "ejercicio-6": lazy(() => import("../pages/Unidad4/E6.tsx")),
   "ejercicio-7": lazy(() => import("../pages/Unidad4/E7.tsx")),
   "ejercicio-8": lazy(() => import("../pages/Unidad4/E8.tsx")),
+  "ejercicio-9": lazy(() => import("../pages/Unidad4/E9.tsx")),
 };
 
 function Router4() {

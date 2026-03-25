@@ -6,7 +6,7 @@ import { MathJax } from "better-react-mathjax";
 import ContactSection from "../../components/Contacto";
 
 const Unidad4 = () => {
-  const ejercicios = Array.from({ length: 8 }, (_, i) => i + 1);
+  const ejercicios = Array.from({ length: 9 }, (_, i) => i + 1);
 
   return (
     <MathJax>
@@ -68,55 +68,53 @@ const Unidad4 = () => {
           estática. Es la fuerza PESO. La Tierra atrae a las cosas y quiere
           hacer que caigan. A esta fuerza se la llama peso.
         </p>
+        <p>$$ P = mg $$</p>
+        <p>
+          Esta ecuación nos dice que el peso es igual a la masa del cuerpo
+          multiplicada por la aceleración de la gravedad.
+        </p>
 
         <h4>Momento de una fuerza (Torque)</h4>
         <p>
           El momento de una fuerza respecto a un punto mide la capacidad de esa
           fuerza para producir rotación. Se define como:
         </p>
-        <p>{`$$\\vec{\\tau} = \\vec{r} \\times \\vec{F}$$`}</p>
+        <p>{`$$ M_0 = \\vec{F} \\times d$$`}</p>
         <p>
           {
-            "Donde $\\vec{r}$ es el vector posición desde el punto de referencia hasta el punto de aplicación de la fuerza, y $\\vec{F}$ es la fuerza aplicada."
+            "Donde $\\vec{F}$ es la fuerza aplicada y $d$ es la distancia desde el punto de referencia hasta el punto de aplicación de la fuerza."
           }
         </p>
+        <p>
+          Para que el momento de fuerza sea cero, la fuerza tiene que ser cero o
+          la distancia tiene que ser cero, es decir, la fuerza pasa por el
+          centro de momentos.
+        </p>
 
-        <h4>Equilibrio traslacional</h4>
+        <h4>Equilibrio traslacional (Fuerzas concurrentes)</h4>
         <p>
           Un cuerpo está en equilibrio traslacional cuando la suma de todas las
           fuerzas que actúan sobre él es cero.
         </p>
         <p>{`$$\\sum F_x = 0 \\quad y \\quad \\sum F_y = 0$$`}</p>
 
-        <h4>Equilibrio rotacional</h4>
+        <h4>Equilibrio rotacional (Fuerzas no concurrentes)</h4>
         <p>
-          Un cuerpo está en equilibrio rotacional cuando la suma de todos los
-          momentos respecto a cualquier punto es cero.
+          Para el equilibrio rotacional, se tiene que cumplir el equilibrio
+          traslacional (es objeto no se mueve) y además la suma de los momentos
+          o torques debe ser cero (el objeto no gira).
         </p>
-        <p>{`$$\\sum \\tau = 0$$`}</p>
+        <p>{`$$\\sum M_0 = 0$$`}</p>
+        <p>
+          Esta se llama ecuación de momentos, nos dice, la sumatoria de momentos
+          respecto a un punto es igual a cero.
+        </p>
 
         <h4>Centro de masa</h4>
         <p>
           El centro de masa es el punto donde se puede considerar concentrada
           toda la masa de un cuerpo para el análisis del movimiento.
         </p>
-
-        <h4>Tipos de equilibrio</h4>
-        <p>Existen tres tipos de equilibrio:</p>
-        <ul>
-          <li>
-            Equilibrio estable: el cuerpo tiende a volver a su posición original
-            tras una perturbación.
-          </li>
-          <li>
-            Equilibrio inestable: el cuerpo se aleja de su posición original
-            tras una perturbación.
-          </li>
-          <li>
-            Equilibrio indiferente: el cuerpo permanece en su nueva posición
-            tras una perturbación.
-          </li>
-        </ul>
 
         {/* Practica */}
         <h3 className="text-[#1d2554]">Práctica</h3>

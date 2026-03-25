@@ -12,8 +12,12 @@ function Ejercicio1() {
 
       <h3>Solución</h3>
       <p>
-        Para que el subibaja esté en equilibrio, los momentos (torques) respecto
-        al centro de giro deben ser iguales:
+        Este problema es de un equilibrio rotacional. Para este caso vamos a
+        tomar el centro de momentos en el centro del subibaja. La fuerza peso de
+        cada persona actúa hacia abajo, y la distancia desde el centro de
+        momentos es la distancia desde el centro del subibaja hasta donde se
+        sienta cada persona. Para que el subibaja esté en equilibrio, los
+        momentos (torques) respecto al centro de giro deben ser iguales.
       </p>
       <p>$$ F_1 \cdot d_1 = F_2 \cdot d_2 $$</p>
       <p>

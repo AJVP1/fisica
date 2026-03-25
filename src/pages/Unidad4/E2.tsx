@@ -20,6 +20,13 @@ function Ejercicio2() {
 
       <h3>Solución</h3>
       <p>
+        Este es un problema de equilibrio rotacional. Para este caso, vamos a
+        tomar como centro de momentos el punto donde la tabla apoya en el punto
+        izquierdo del andamio. La fuerza peso del pintor y de la tabla actúan
+        hacia abajo, y las distancias desde el centro de momentos son las
+        distancias desde ese punto hasta donde actúan cada una de las fuerzas.
+      </p>
+      <p>
         El total de la tabla es: $1,5 + 2 + 1,5 = 5,0$ m. Como la misma es
         homogénea, su peso se distribuye uniformemente a lo largo de su longitud
         y su centro de masa se encuentra en el punto medio de la tabla, es
@@ -31,20 +38,22 @@ function Ejercicio2() {
         <li>{"$m_t = 15,0 \\, \\text{kg}$ (masa de la tabla)"}</li>
         <li>
           {
-            "$d = 2,5 \\, \\text{m}$ (distancia del centro de masa de la tabla al extremo izquierdo)"
+            "$d_t = 1 \\, \\text{m}$ (distancia del centro de momentos al centro de masa de la tabla)"
           }
         </li>
-        <li>{"$pg = 1,5 \\, \\text{m}$ (punto de giro)"}</li>
+        <li>
+          {
+            "$d_M = 1,5 \\, \\text{m}$ (distancia del centro de momentos al extremo izquierdo)"
+          }
+        </li>
         <li>{"$x$ (distancia del pintor al extremo izquierdo)"}</li>
       </ul>
       <p>Ecuación de equilibrio de momentos:</p>
-      <p>
-        {"$$ m_p \\cdot g \\cdot (pg - x) = m_t \\cdot g \\cdot (d - pg) $$"}
-      </p>
+      <p>{"$$ m_p \\cdot g \\cdot (d_M - x) = m_t \\cdot g \\cdot d_t $$"}</p>
       <p>Sustituyendo:</p>
       <p>
         {
-          "$$ 75,0 \\, \\text{kg} \\cdot g \\cdot (1,5 \\, \\text{m} - x) = 15,0 \\, \\text{kg} \\cdot g \\cdot (2,5 \\, \\text{m} - 1,5 \\, \\text{m}) $$"
+          "$$ 75,0 \\, \\text{kg} \\cdot g \\cdot (1,5 \\, \\text{m} - x) = 15,0 \\, \\text{kg} \\cdot g \\cdot 1 \\, \\text{m} $$"
         }
       </p>
       <p>{"$$1,5 \\, \\text{m} - x = 0,2 \\, \\text{m}$$"}</p>
