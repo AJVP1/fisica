@@ -25,11 +25,17 @@ function Ejercicio7() {
       />
 
       <h3>Solución</h3>
+      <p>Podemos escribir cada vector de las tensiones como:</p>
+      <p>{"$$ T_1 = (P \\cos(\\alpha), P \\sin(\\alpha)) $$"}</p>
+      <p>{"$$ T_2 = (P \\cos(\\beta), P \\sin(\\beta)) $$"}</p>
+
       <p>Haciendo el equilibrio horizontal:</p>
+      <p>{"$$ P \\cos(\\alpha) - P \\cos(\\beta) = 0 $$"}</p>
       <p>{"$$ P \\cdot \\cos(\\alpha) = P \\cdot \\cos(\\beta) $$"}</p>
       <p>$$ \alpha = \beta $$</p>
 
       <p>Haciendo el equilibrio vertical:</p>
+      <p>{"$$ P \\cdot \\sin(\\alpha) + P \\cdot \\sin(\\beta) - P = 0 $$"}</p>
       <p>{"$$ P \\cdot \\sin(\\alpha) + P \\cdot \\sin(\\beta) = P $$"}</p>
       <p>{"$$ 2P \\cdot \\sin(\\alpha) = P $$"}</p>
       <p>{"$$ \\sin(\\alpha) = \\frac{1}{2} $$"}</p>

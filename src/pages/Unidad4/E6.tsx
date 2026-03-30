@@ -22,6 +22,12 @@ function Ejercicio6() {
         componentes horizontales se anulan entre sí. Solo las componentes
         verticales sostienen el peso:
       </p>
+      <p>
+        {
+          "$$ T_1 \\cos(\\theta) + T_2 \\cos(\\theta) + T_3 \\cos(\\theta) + T_4 \\cos(\\theta) = mg $$"
+        }
+      </p>
+      <p>Dado que todas las tensiones van a ser iguales:</p>
       <p>{"$$ 4T \\cdot \\cos(\\theta) = mg $$"}</p>
       <p>
         {

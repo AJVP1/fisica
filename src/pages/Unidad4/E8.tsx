@@ -27,6 +27,7 @@ function Ejercicio8() {
         <li>$d_2 = 2,46$ m</li>
         <li>$d_c$ es lo que debemos encontrar</li>
       </ul>
+      <p>$$ F_1 \cdot d_1 + F_2 \cdot d_2 - P \cdot d_c = 0 $$</p>
       <p>$$ F_1 \cdot d_1 + F_2 \cdot d_2 = P \cdot d_c $$</p>
       <p>Reemplazando los valores:</p>
       <p>$$ 0,470 P \cdot 0 + 0,530 P \cdot 2,46 = P \cdot d_c $$</p>
