@@ -19,15 +19,15 @@ function Ejercicio3() {
       <p>Datos:</p>
       <ul>
         <li>{"$m_p = 75,0 \\, \\text{kg}$ (masa del pintor)"}</li>
+        <li>
+          {
+            "$d_p = 1,5 \\, \\text{m}$ (distancia del pintor al extremo izquierdo)"
+          }
+        </li>
         <li>{"$m_t = 15,0 \\, \\text{kg}$ (masa de la tabla)"}</li>
         <li>
           {
             "$d_t = 2,5 \\, \\text{m}$ (distancia del centro de masa de la tabla al extremo izquierdo)"
-          }
-        </li>
-        <li>
-          {
-            "$d_p = 1,5 \\, \\text{m}$ (distancia del pintor al extremo izquierdo)"
           }
         </li>
         <li>{"$T_1$ (tensión en la cuerda del extremo izquierdo)"}</li>
@@ -43,7 +43,19 @@ function Ejercicio3() {
           }
         </li>
       </ul>
-      <p>Ecuación de equilibrio de momentos:</p>
+      <p>Equilibrio:</p>
+      <p>
+        {
+          "$$ \\begin{cases} \\sum F_y = 0 \\\\[8pt] \\sum M = 0 \\end{cases} $$"
+        }
+      </p>
+      <p>Reemplazando:</p>
+      <p>
+        {
+          "$$ \\begin{cases} T_1 + T_2 - m_p \\cdot g - m_t \\cdot g = 0 \\\\[8pt] T_1 \\cdot d_1 + T_2 \\cdot d_2 - m_p \\cdot g \\cdot d_p - m_t \\cdot g \\cdot d_t = 0 \\end{cases} $$"
+        }
+      </p>
+      <p>De la segunda ecuación:</p>
       <p>
         {
           "$$ T_1 \\cdot d_1 + T_2 \\cdot d_2 = m_p \\cdot g \\cdot d_p+ m_t \\cdot g \\cdot d_t $$"
@@ -56,7 +68,7 @@ function Ejercicio3() {
         }
       </p>
       <p>{"$$ T_2 = 30 \\, \\text{kg} \\cdot g $$"}</p>
-      <p>La cantidad de fuerza que tendran que soportar las cuerdas es:</p>
+      <p>Reemplazando en la primera:</p>
       <p>{"$$ T_1 + T_2 = (m_p + m_t) \\cdot g $$"}</p>
       <p>
         {

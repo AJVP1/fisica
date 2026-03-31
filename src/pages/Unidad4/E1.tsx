@@ -12,12 +12,17 @@ function Ejercicio1() {
 
       <h3>Solución</h3>
       <p>
-        Este problema es de un equilibrio rotacional. Para este caso vamos a
-        tomar el centro de momentos en el centro del subibaja. La fuerza peso de
-        cada persona actúa hacia abajo, y la distancia desde el centro de
-        momentos es la distancia desde el centro del subibaja hasta donde se
-        sienta cada persona. Para que el subibaja esté en equilibrio, los
-        momentos (torques) respecto al centro de giro deben ser iguales.
+        Este problema es uno de fuerzas no concurrentes, dado que las fuerzas no
+        actúan sobre el mismo punto. Como podemos imaginar, hay tres fuerzas
+        involucradas: la fuerza peso del niño, la fuerza peso del padre y la
+        fuerza normal del asiento del subibaja. Las dos primeras fuerzas actúan
+        hacia abajo, mientras que la tercera actúa hacia arriba. Entonces vamos
+        a escoger el centro de momentos en el centro del subibaja para quitar
+        esa fuerza y solo tener que hacer el equilibrio de momentos.
+      </p>
+      <p>
+        Para que el subibaja esté en equilibrio, los momentos (torques) respecto
+        al centro de giro deben ser iguales.
       </p>
       <p>$$ F_1 \cdot d_1 = F_2 \cdot d_2 $$</p>
       <p>

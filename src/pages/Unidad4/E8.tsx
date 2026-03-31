@@ -15,10 +15,7 @@ function Ejercicio8() {
       </p>
 
       <h3>Solución</h3>
-      <p>
-        Tomamos como centro de momentos el eje trasero. Para que este el sistema
-        en equilibrio se debe cumplir que:
-      </p>
+      <p>Tomamos como centro de momentos el eje trasero.</p>
       <p>Datos:</p>
       <ul>
         <li>$F_1 = 0,470 P$</li>
@@ -27,6 +24,7 @@ function Ejercicio8() {
         <li>$d_2 = 2,46$ m</li>
         <li>$d_c$ es lo que debemos encontrar</li>
       </ul>
+      <p>Para que este el sistema en equilibrio se debe cumplir que:</p>
       <p>$$ F_1 \cdot d_1 + F_2 \cdot d_2 - P \cdot d_c = 0 $$</p>
       <p>$$ F_1 \cdot d_1 + F_2 \cdot d_2 = P \cdot d_c $$</p>
       <p>Reemplazando los valores:</p>

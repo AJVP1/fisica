@@ -14,8 +14,8 @@ function Ejercicio9() {
       </p>
       <ol>
         <li>
-          ¿Dónde debe colocarsse el contrapeso de $9,50 \times 10^3$ kg cuando
-          la carga se levanta desde el suelo?
+          ¿Dónde debe colocarse el contrapeso de $9,50 \times 10^3$ kg cuando la
+          carga se levanta desde el suelo?
         </li>
         <li>
           Determine la carga máxima que puede ser levantada cuando el contrapeso

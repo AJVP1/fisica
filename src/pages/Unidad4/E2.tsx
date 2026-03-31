@@ -23,18 +23,18 @@ function Ejercicio2() {
         Este es un problema de equilibrio rotacional. Para este caso, vamos a
         tomar como centro de momentos el punto donde la tabla apoya en el punto
         izquierdo del andamio. La fuerza peso del pintor y de la tabla actúan
-        hacia abajo, y las distancias desde el centro de momentos son las
-        distancias desde ese punto hasta donde actúan cada una de las fuerzas.
+        hacia abajo, y las fuerzas del andamio actúan hacia arriba.
       </p>
       <p>
-        El total de la tabla es: $1,5 + 2 + 1,5 = 5,0$ m. Como la misma es
-        homogénea, su peso se distribuye uniformemente a lo largo de su longitud
-        y su centro de masa se encuentra en el punto medio de la tabla, es
-        decir, a $2,5$ m del extremo izquierdo.
+        En el limite, la fuerza derecha del andamio no soporta más el peso de la
+        tabla. Por lo que podemos pensar este ejercicio como un problema de
+        subibaja donde el centro es el punto de apoyo izquierdo.
       </p>
+
       <p>Datos:</p>
       <ul>
         <li>{"$m_p = 75,0 \\, \\text{kg}$ (masa del pintor)"}</li>
+        <li>{"$d_p$ (distancia del pintor al extremo izquierdo)"}</li>
         <li>{"$m_t = 15,0 \\, \\text{kg}$ (masa de la tabla)"}</li>
         <li>
           {
@@ -46,21 +46,20 @@ function Ejercicio2() {
             "$d_M = 1,5 \\, \\text{m}$ (distancia del centro de momentos al extremo izquierdo)"
           }
         </li>
-        <li>{"$x$ (distancia del pintor al extremo izquierdo)"}</li>
       </ul>
+
       <p>Ecuación de equilibrio de momentos:</p>
-      <p>{"$$ m_p \\cdot g \\cdot (d_M - x) = m_t \\cdot g \\cdot d_t $$"}</p>
+      <p>{"$$ m_p \\cdot g \\cdot d_p = m_t \\cdot g \\cdot d_t $$"}</p>
       <p>Sustituyendo:</p>
       <p>
         {
-          "$$ 75,0 \\, \\text{kg} \\cdot g \\cdot (1,5 \\, \\text{m} - x) = 15,0 \\, \\text{kg} \\cdot g \\cdot 1 \\, \\text{m} $$"
+          "$$ 75,0 \\, \\text{kg} \\cdot g \\cdot d_p = 15,0 \\, \\text{kg} \\cdot g \\cdot 1 \\, \\text{m} $$"
         }
       </p>
-      <p>{"$$1,5 \\, \\text{m} - x = 0,2 \\, \\text{m}$$"}</p>
-      <p>{"$$x = 1,3 \\, \\text{m}$$"}</p>
+      <p>{"$$d_p = 0,2 \\, \\text{m}$$"}</p>
       <p>
-        Por lo tanto, el pintor puede pararse a 1,3 metros del extremo izquierdo
-        de la tabla sin que esta se incline.
+        El pintor entonces puede pararse a 0,2 metros del soporte izquierdo sin
+        que la tabla se incline. Es decir, a 1,3 metros del extremo izquierdo.
       </p>
     </ExerciseLayout>
   );
