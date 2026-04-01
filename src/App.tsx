@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Router2 from "./routes/Router2";
 import Router3 from "./routes/Router3";
 import Router4 from "./routes/Router4";
+import Router5 from "./routes/Router5";
 
 // importaciones de páginas
 import Bienvenida from "./pages/Bienvenida";
@@ -17,6 +18,7 @@ const Introduccion = lazy(() => import("./pages/Introduccion"));
 const Unidad2 = lazy(() => import("./pages/Unidad2/Teoria"));
 const Unidad3 = lazy(() => import("./pages/Unidad3/Teoria"));
 const Unidad4 = lazy(() => import("./pages/Unidad4/Teoria"));
+const Unidad5 = lazy(() => import("./pages/Unidad5/Teoria"));
 
 // importaciones de auth
 import LoginPage from "./auth/LoginPage";
@@ -79,6 +81,17 @@ function App() {
               }
             >
               <Route path=":slug" element={<Router4 />} />
+            </Route>
+
+            <Route
+              path="/hidrostatica"
+              element={
+                <AuthRoute>
+                  <Unidad5 />
+                </AuthRoute>
+              }
+            >
+              <Route path=":slug" element={<Router5 />} />
             </Route>
 
             <Route path="/login" element={<LoginPage />} />
