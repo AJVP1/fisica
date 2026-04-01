@@ -110,7 +110,7 @@ const Unidad4 = () => {
           fuerza peso.
         </p>
         <p>También vamos a incluir una variable de la formula de la Fuerza:</p>
-        <p>{"$$ \\vec{E} = \\rho_{liq} \\cdot g \\cdot V_{liq} $$"}</p>
+        <p>{"$$ \\vec{E} = \\rho_{liq} \\cdot g \\cdot V_{sumergido} $$"}</p>
         <p>{"$$ \\vec{P} = \\rho_{cuerpo} \\cdot g \\cdot V_{cuerpo} $$"}</p>
 
         <h4>Presión atmosférica</h4>
