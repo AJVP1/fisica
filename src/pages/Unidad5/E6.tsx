@@ -10,6 +10,20 @@ function Ejercicio6() {
       <p>{"Dato: $ \\rho_{\\text{agua}} = 1000 \\, \\text{kg/m}^3 $"}</p>
 
       <h3>Solución</h3>
+      <p>
+        Para determinar si el cubo flotará en agua, debo comparar su densidad
+        con la densidad del agua.
+      </p>
+      <p>
+        {
+          "$$ \\rho_{\\text{cubo}} = \\frac{m}{V} = \\frac{0,650}{(0,085)^3} = 1100 \\, \\text{kg/m}^3 $$"
+        }
+      </p>
+      <p>
+        {
+          "Dado que $ \\rho_{\\text{cubo}} > \\rho_{\\text{agua}} $, el cubo no flotará en agua."
+        }
+      </p>
     </ExerciseLayout>
   );
 }

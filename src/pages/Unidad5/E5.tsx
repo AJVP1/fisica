@@ -23,6 +23,32 @@ function Ejercicio5() {
       </p>
 
       <h3>Solución</h3>
+      <p>
+        Para encontrar la presión manométrica donde se unen el agua y el
+        mercurio, solo debo buscar la presión manométrica en dicho punto:
+      </p>
+      <p>
+        {
+          "$$ P_{man} = \\rho_{\\text{agua}} g h = 1000 \\cdot 9,8 \\cdot 0,15 = 1470 \\, \\text{Pa} = 1,47 \\times 10^3 \\, \\text{Pa} $$"
+        }
+      </p>
+      <p>
+        Luego, para encontrar la distancia vertical h, que es donde se encuentra
+        la superficie del mercurio, puedo usar la presión ya encontrada en el
+        punto de intersección:
+      </p>
+      <p>{"$$ P_{man} = \\rho_{\\text{mercurio}} g h $$"}</p>
+      <p>
+        {
+          "$$ h = \\frac{P_{man}}{\\rho_{\\text{mercurio}} g} = \\frac{1470}{13600 \\cdot 9,8} = 0,011 \\, \\text{m} $$"
+        }
+      </p>
+      <p>Ahora, la diferencia de alturas entre superficies será:</p>
+      <p>
+        {
+          "$$ \\Delta h = 0,15 - 0,011 = 0,139 \\, \\text{m} = 13,9 \\, \\text{cm} $$"
+        }
+      </p>
     </ExerciseLayout>
   );
 }
