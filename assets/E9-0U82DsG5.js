@@ -1,1 +1,0 @@
-import{j as r}from"./index-G77dgFod.js";import{E as e}from"./Ejecicio-KJuK-KP4.js";import"./MathJax-CFBFY2Dp.js";function s(){return r.jsxs(e,{number:9,children:[r.jsx("h3",{children:"Enunciado"}),r.jsx("p",{children:"Demuestre que el barómetro de agua no sería práctico"}),r.jsx("h3",{children:"Solución"})]})}export{s as default};
