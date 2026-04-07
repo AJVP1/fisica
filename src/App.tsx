@@ -11,6 +11,7 @@ import Router2 from "./routes/Router2";
 import Router3 from "./routes/Router3";
 import Router4 from "./routes/Router4";
 import Router5 from "./routes/Router5";
+import Router6 from "./routes/Router6";
 
 // importaciones de páginas
 import Bienvenida from "./pages/Bienvenida";
@@ -19,6 +20,7 @@ const Unidad2 = lazy(() => import("./pages/Unidad2/Teoria"));
 const Unidad3 = lazy(() => import("./pages/Unidad3/Teoria"));
 const Unidad4 = lazy(() => import("./pages/Unidad4/Teoria"));
 const Unidad5 = lazy(() => import("./pages/Unidad5/Teoria"));
+const Unidad6 = lazy(() => import("./pages/Unidad6/Teoria"));
 
 // importaciones de auth
 import LoginPage from "./auth/LoginPage";
@@ -92,6 +94,17 @@ function App() {
               }
             >
               <Route path=":slug" element={<Router5 />} />
+            </Route>
+
+            <Route
+              path="/cinematica-una-dimension"
+              element={
+                <AuthRoute>
+                  <Unidad6 />
+                </AuthRoute>
+              }
+            >
+              <Route path=":slug" element={<Router6 />} />
             </Route>
 
             <Route path="/login" element={<LoginPage />} />
