@@ -40,7 +40,11 @@ export const TableOfContents = ({ items = [] }: Props) => {
                 href={`#${id}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+                  const el = document.getElementById(id);
+                  if (el) {
+                    const top = el.getBoundingClientRect().top + window.scrollY - 96;
+                    window.scrollTo({ top, behavior: "smooth" });
+                  }
                 }}
                 className={`block transition-colors ${
                   activeId === id
