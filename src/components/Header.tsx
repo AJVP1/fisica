@@ -24,12 +24,12 @@ const Header = () => {
           Inicio
         </Link>
       ) : (
-        <Link
-          to="/logout"
+        <button
+          onClick={auth.logout}
           className="border-2 border-[#1d2554] font-semibold text-white px-4 py-2 rounded-lg hover:border-white"
         >
           Cerrar sesión
-        </Link>
+        </button>
       )}
     </header>
   );

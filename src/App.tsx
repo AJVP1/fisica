@@ -14,8 +14,7 @@ import Router5 from "./routes/Router5";
 import Router6 from "./routes/Router6";
 
 // importaciones de páginas
-import Bienvenida from "./pages/Bienvenida";
-const Introduccion = lazy(() => import("./pages/Introduccion"));
+import Introduccion from "./pages/Introduccion";
 const Unidad2 = lazy(() => import("./pages/Unidad2/Teoria"));
 const Unidad3 = lazy(() => import("./pages/Unidad3/Teoria"));
 const Unidad4 = lazy(() => import("./pages/Unidad4/Teoria"));
@@ -24,7 +23,6 @@ const Unidad6 = lazy(() => import("./pages/Unidad6/Teoria"));
 
 // importaciones de auth
 import LoginPage from "./auth/LoginPage";
-import LogoutPage from "./auth/LogoutPage";
 import { AuthRoute } from "./auth/Auth";
 
 // Componente de carga
@@ -49,8 +47,14 @@ function App() {
 
         <Suspense fallback={<LoadingComponent />}>
           <Routes>
-            <Route path="/" element={<Bienvenida />} />
-            <Route path="/introduccion" element={<Introduccion />} />
+            <Route
+              path="/"
+              element={
+                <AuthRoute>
+                  <Introduccion />
+                </AuthRoute>
+              }
+            />
 
             <Route
               path="/la-medicion"
@@ -108,14 +112,6 @@ function App() {
             </Route>
 
             <Route path="/login" element={<LoginPage />} />
-            <Route
-              path="/logout"
-              element={
-                <AuthRoute>
-                  <LogoutPage />
-                </AuthRoute>
-              }
-            />
 
             <Route path="*" element={<p>Página no encontrada</p>} />
           </Routes>

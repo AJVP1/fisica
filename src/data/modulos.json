@@ -1,11 +1,5 @@
 [
   {
-    "id": 1,
-    "titulo": "Introducción",
-    "descripcion": "Problemas a tratar durante la materia. Material obligatorio.",
-    "link": "/introduccion"
-  },
-  {
     "id": 2,
     "titulo": "La Medición",
     "descripcion": "Unidades fundamentales. Múltiplos y submúltiplos. La medición en física. Cifras significativas. Órdenes de magnitud.",
