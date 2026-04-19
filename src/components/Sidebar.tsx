@@ -30,7 +30,7 @@ export const Sidebar = () => {
                   className={({ isActive }) =>
                     `flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
                       isActive
-                        ? "bg-[#141414] text-white font-medium"
+                        ? "bg-accent text-white font-medium"
                         : "text-[#141414] hover:bg-[#f2f2f2]"
                     }`
                   }

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: #c5a059;
+}
+
 /* Design Tokens */
 :root {
   --color-primary: #1d2554;
