@@ -1,9 +1,15 @@
+import { DocsLayout } from "../layout/Docs.tsx";
+import { TableOfContents } from "../components/TableOfContents.tsx";
+import modulosData from "../data/modulos.json";
+
 export const Introduccion = () => {
   return (
-    <section className="bg-[#fafafa] max-w-237 mx-auto p-4 md:p-6">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1d2554] text-center mt-4 md:mt-6">
+    <DocsLayout
+      toc={<TableOfContents items={modulosData.sidebar[0].items[0].toc} />}
+    >
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1d2554] text-center mt-4 md:mt-6">
         Introducción a la materia
-      </h2>
+      </h1>
       <p className="mt-4 md:mt-6">
         La Física estudia la naturaleza y cómo funciona el universo, desde las
         partículas más pequeñas hasta las galaxias. Es un conjunto de ideas,
@@ -80,6 +86,6 @@ export const Introduccion = () => {
         diversos fenómenos de la naturaleza. Estos temas se abordan tanto desde
         una perspectiva conceptual como mediante modelos matemáticos.
       </p>
-    </section>
+    </DocsLayout>
   );
 };

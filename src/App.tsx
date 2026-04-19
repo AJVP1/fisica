@@ -3,9 +3,6 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { MathJaxContext } from "better-react-mathjax";
 
-// importaciones de componentes
-import { Header } from "./components/Header";
-
 // importaciones de rutas
 import Router2 from "./routes/Router2";
 import Router3 from "./routes/Router3";
@@ -43,8 +40,6 @@ function App() {
   return (
     <MathJaxContext config={{ tex: { inlineMath: [["$", "$"]] } }}>
       <HashRouter>
-        <Header />
-
         <Suspense fallback={<LoadingComponent />}>
           <Routes>
             <Route
