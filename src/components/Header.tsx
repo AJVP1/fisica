@@ -2,7 +2,7 @@ import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/Auth.tsx";
 
-const Header = () => {
+export const Header = () => {
   const auth = useAuth();
 
   return (
@@ -34,5 +34,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

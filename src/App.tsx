@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 import { MathJaxContext } from "better-react-mathjax";
 
 // importaciones de componentes
-import Header from "./components/Header";
+import { Header } from "./components/Header";
 
 // importaciones de rutas
 import Router2 from "./routes/Router2";
