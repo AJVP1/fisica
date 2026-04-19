@@ -36,7 +36,7 @@ function LoginPage() {
           <div className="flex flex-col gap-1">
             <label
               htmlFor="password"
-              className="text-sm md:text-base font-medium text-gray-700"
+              className="text-sm md:text-base font-medium text-gray-700 mb-3 text-center"
             >
               Contraseña
             </label>
@@ -47,7 +47,7 @@ function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               required
               autoComplete="current-password"
-              className="bg-white rounded-lg p-2 md:p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1d2554] text-sm md:text-base"
+              className="bg-white rounded-lg p-1 md:p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1d2554] text-sm md:text-base"
             />
             {/* Muestra el error solo si existe */}
             {error && (

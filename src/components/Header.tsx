@@ -6,7 +6,7 @@ export const Header = () => {
   const auth = useAuth();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#1d2554] bg-[#1d2554] text-white backdrop-blur-lg mx-auto flex justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#1d2554] text-white mx-auto flex justify-between px-6 py-4">
       <Link className="flex items-center gap-4" to="/">
         <img src={logo} alt="Logo" className="brightness-0 invert w-16 h-16" />
         <div>
@@ -16,17 +16,10 @@ export const Header = () => {
           </p>
         </div>
       </Link>
-      {!auth.user ? (
-        <Link
-          to="/login"
-          className="self-center border-2 border-[#1d2554] font-semibold text-white px-4 py-2 rounded-lg hover:border-white"
-        >
-          Inicio
-        </Link>
-      ) : (
+      {auth.user && (
         <button
           onClick={auth.logout}
-          className="self-center border-2 border-[#1d2554] font-semibold text-white px-4 py-2 rounded-lg hover:border-white"
+          className="self-center border-2 border-white/30 font-semibold text-white px-4 py-2 rounded-lg hover:border-red-500 hover:bg-red-500 hover:text-white transition-all duration-200 cursor-pointer"
         >
           Cerrar sesión
         </button>

@@ -16,7 +16,7 @@ const groups: SidebarGroup[] = modulos.sidebar;
 
 export const Sidebar = () => {
   return (
-    <aside className="sidebar-scroll hidden md:flex md:w-72 md:flex-col md:sticky md:top-16 md:h-[calc(100vh-64px)] overflow-y-auto border-r border-[#f2f2f2] p-6 space-y-8">
+    <aside className="sidebar-scroll hidden md:flex md:w-72 md:flex-col md:sticky md:top-24 md:h-[calc(100vh-96px)] overflow-y-auto border-r border-[#f2f2f2] p-6 space-y-8 z-10">
       {groups.map((group) => (
         <div key={group.title}>
           <h5 className="mb-4 text-xs font-bold uppercase tracking-wider text-[#757575]">

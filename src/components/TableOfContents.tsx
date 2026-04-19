@@ -28,7 +28,7 @@ export const TableOfContents = ({ items = [] }: Props) => {
   }, [items]);
 
   return (
-    <aside className="hidden h-[calc(100vh-64px)] w-64 shrink-0 overflow-y-auto p-8 xl:sticky xl:top-16 xl:block">
+    <aside className="hidden h-[calc(100vh-96px)] w-64 shrink-0 overflow-y-auto p-8 xl:sticky xl:top-24 xl:block z-10">
       <h5 className="mb-4 text-xs font-bold uppercase tracking-wider text-[#757575]">
         En esta página
       </h5>
