@@ -5,25 +5,17 @@
       "items": [
         {
           "to": "/",
-          "label": "Introducción a Spring Boot",
+          "label": "Introducción",
           "icon": "home",
           "toc": [
-            { "id": "que-es-spring-boot", "title": "¿Qué es Spring Boot?" },
+            { "id": "material-obligatorio", "title": "Material obligatorio" },
             {
-              "id": "ventajas",
-              "title": "Ventajas de Spring Boot"
+              "id": "objetivos",
+              "title": "Objetivos"
             },
             {
-              "id": "ecosistema-spring",
-              "title": "Ecosistema Spring"
-            },
-            {
-              "id": "primer-proyecto",
-              "title": "Crear primer proyecto"
-            },
-            {
-              "id": "estructura-proyecto",
-              "title": "Estructura del proyecto"
+              "id": "programa",
+              "title": "Programa de la materia"
             }
           ]
         }
