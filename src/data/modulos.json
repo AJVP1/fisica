@@ -27,7 +27,7 @@
         {
           "to": "/la-medicion",
           "label": "La medición",
-          "icon": "code",
+          "icon": "straighten",
           "toc": [
             { "id": "por-que-medimos", "title": "¿Por qué medimos?" },
             { "id": "unidades-base", "title": "Unidades base" },
@@ -56,7 +56,7 @@
         {
           "to": "/magnitudes-fisicas",
           "label": "Magnitudes físicas",
-          "icon": "code",
+          "icon": "arrow_forward",
           "toc": [
             { "id": "escalar", "title": "Escalar" },
             { "id": "vector", "title": "Vector" },
@@ -87,7 +87,7 @@
         {
           "to": "/estatica",
           "label": "Estática",
-          "icon": "code",
+          "icon": "balance",
           "toc": [
             { "id": "definicion", "title": "Definición" },
             {
@@ -120,7 +120,7 @@
         {
           "to": "/hidroestatica",
           "label": "Hidroestática",
-          "icon": "code",
+          "icon": "water",
           "toc": [
             { "id": "definicion", "title": "Definición" },
             {
@@ -154,7 +154,7 @@
         {
           "to": "/cinematica-una-dimension",
           "label": "Cinemática en una dimensión",
-          "icon": "code",
+          "icon": "speed",
           "toc": [
             { "id": "definicion", "title": "Definición" },
             {
