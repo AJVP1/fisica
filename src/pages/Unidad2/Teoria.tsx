@@ -1,55 +1,96 @@
-// importamos Link para navegacion interna
 import { Link, Outlet } from "react-router-dom";
-// importamos MathJax para formulas matematicas
 import { MathJax } from "better-react-mathjax";
-// importamos componente de contacto
-import ContactSection from "../../components/Contacto";
+
+import { DocsLayout } from "../../layout/Docs.tsx";
+import { TableOfContents } from "../../components/TableOfContents.tsx";
+import modulosData from "../../data/modulos.json";
 
 const Unidad2 = () => {
   const ejercicios = Array.from({ length: 10 }, (_, i) => i + 1);
 
   return (
-    <MathJax>
-      <section className="bg-[#fafafa] max-w-270 mx-auto p-3 sm:p-4 md:p-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#1d2554] mt-6">
+    <DocsLayout
+      toc={<TableOfContents items={modulosData.sidebar[1].items[0].toc} />}
+    >
+      <MathJax>
+        <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
           La medición
-        </h2>
+        </h1>
 
-        <h3 className="text-[#1d2554]">Teoría</h3>
+        <p className="text-xl text-[#757575] leading-relaxed">
+          La medición es fundamental en física porque permite describir los
+          fenómenos naturales de forma objetiva, precisa y comunicable.
+        </p>
+
+        <h2 className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20">
+          Teoría
+        </h2>
         <hr />
 
-        <h4>Por qué medimos?</h4>
-        <p>
+        <h3
+          id="por-que-medimos"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          ¿Por qué medimos?
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           La medición es fundamental para describir el mundo con precisión.
           Indicaciones vagas o descripciones imprecisas no son útiles; en
           cambio, las mediciones permiten comunicar información clara y
           objetiva. En física, medir es una herramienta esencial para comprender
-          y describir la naturaleza. Aunque algunos aspectos del mundo pueden
-          describirse de forma subjetiva, como el color, estas percepciones
-          varían entre personas. En cambio, propiedades físicas como la longitud
-          de onda o la frecuencia de la luz pueden medirse y son iguales para
-          todos. Por ello, la física busca explicar la naturaleza de manera
-          objetiva, basándose en mediciones.
+          y describir la naturaleza.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Aunque algunos aspectos del mundo pueden describirse de forma
+          subjetiva, como el color, estas percepciones varían entre personas. En
+          cambio, propiedades físicas como la longitud de onda o la frecuencia
+          de la luz pueden medirse y son iguales para todos. Por ello, la física
+          busca explicar la naturaleza de manera objetiva, basándose en
+          mediciones.
         </p>
 
-        <h4>Unidades base</h4>
-        <p>
+        <h3
+          id="unidades-base"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Unidades base
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           El Sistema Internacional de Unidades (SI) define siete cantidades
           base, consideradas independientes entre sí y suficientes para
-          describir todos los fenómenos físicos. Estas son:
+          describir todos los fenómenos físicos.
         </p>
-        <ul>
-          <li>Metro (m): Longitud</li>
-          <li>Segundo (s): Tiempo</li>
-          <li>Kilogramo (kg): Masa</li>
-          <li>Ampere (A): Corriente eléctrica</li>
-          <li>Kelvin (K): Temperatura</li>
-          <li>Mol (mol): Cantidad de sustancia</li>
-          <li>Candela (cd): Intensidad luminosa</li>
+        <ul className="list-disc text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Metro (m): Longitud
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Segundo (s): Tiempo
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Kilogramo (kg): Masa
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Ampere (A): Corriente eléctrica
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Kelvin (K): Temperatura
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Mol (mol): Cantidad de sustancia
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Candela (cd): Intensidad luminosa
+          </li>
         </ul>
 
-        <h4>Prefijos del Sistema Internacional</h4>
-        <table className="w-64 border-collapse text-sm sm:text-base mt-2 mb-4 mx-auto rounded-lg overflow-hidden shadow-md">
+        <h3
+          id="prefijos-si"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Prefijos del Sistema Internacional
+        </h3>
+        <table className="max-w-md mx-auto border-collapse text-sm md:text-base mt-4 mb-6 rounded-lg overflow-hidden shadow-md">
           <thead>
             <tr className="bg-[#1d2554] text-white">
               <th className="px-4 py-2.5 text-left font-semibold">Múltiplo</th>
@@ -70,11 +111,7 @@ const Unidad2 = () => {
               { multiplo: "$10^{-6}$", prefijo: "micro- (μ)", bold: true },
               { multiplo: "$10^{-9}$", prefijo: "nano- (n)", bold: false },
               { multiplo: "$10^{-12}$", prefijo: "pico- (p)", bold: false },
-              {
-                multiplo: "$10^{-15}$",
-                prefijo: "femto- (f)",
-                bold: false,
-              },
+              { multiplo: "$10^{-15}$", prefijo: "femto- (f)", bold: false },
               { multiplo: "$10^{-18}$", prefijo: "atto- (a)", bold: false },
             ].map(({ multiplo, prefijo, bold }, i) => (
               <tr
@@ -87,36 +124,47 @@ const Unidad2 = () => {
                       : "bg-white"
                 }`}
               >
-                <td className="px-4 py-1.5">{multiplo}</td>
-                <td className="px-4 py-1.5">{prefijo}</td>
+                <td className="px-4 py-2">{multiplo}</td>
+                <td className="px-4 py-2">{prefijo}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p>
-          Por ejemplo, 1 gramo (g) multiplicado por 1000 (que es 10<sup>3</sup>{" "}
-          ) es 1 kilogramo (kg); 1 gramo multiplicado por 1/1000 (que es 10
-          <sup>-3</sup> ) es 1 miligramo (mg).
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Por ejemplo, 1 gramo (g) multiplicado por 1000 (que es 10
+          <sup>3</sup>) es 1 kilogramo (kg); 1 gramo multiplicado por 1/1000
+          (que es 10<sup>-3</sup>) es 1 miligramo (mg).
         </p>
 
-        <h4>Conversión de unidades</h4>
-        <p>
+        <h3
+          id="conversion-unidades"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Conversión de unidades
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Las conversiones de unidades permiten expresar una misma cantidad
           usando diferentes unidades. Para realizarlas se utilizan factores de
-          conversión, que provienen de enunciados de equivalencia (por ejemplo,
-          3 ft = 1 yd).
+          conversión, que provienen de enunciados de equivalencia.
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Un factor de conversión es un cociente equivalente a 1, por lo que al
           multiplicar una cantidad por él no cambia su valor físico, solo su
           unidad. En las conversiones se utiliza el análisis de unidades, que
           consiste en elegir el factor adecuado para que las unidades originales
-          se cancelen. Por ejemplo: si queremos pasar 12 pies a yardas haríamos
+          se cancelen.
         </p>
-        <p>{"$$ 12 ft \\times \\frac{1yd}{3ft}  = 4 yd $$"}</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 12 ft \\times \\frac{1yd}{3ft}  = 4 yd $$"}
+        </p>
 
-        <h4>Unidades de cantidades comunes</h4>
-        <table className="w-72 border-collapse text-sm sm:text-base mt-2 mb-4 mx-auto rounded-lg overflow-hidden shadow-md">
+        <h3
+          id="unidades-cantidades-comunes"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Unidades de cantidades comunes
+        </h3>
+        <table className="max-w-md mx-auto border-collapse text-sm md:text-base mt-4 mb-6 rounded-lg overflow-hidden shadow-md">
           <thead>
             <tr className="bg-[#1d2554] text-white">
               <th className="px-4 py-2.5 text-left font-semibold italic">
@@ -167,7 +215,9 @@ const Unidad2 = () => {
             ].map(({ cantidad, unidad }, i) => (
               <tr
                 key={i}
-                className={`border-b border-[#c8d8e8] transition-colors hover:bg-[#cddceb] ${i % 2 === 0 ? "bg-[#f0f5fa]" : "bg-white"}`}
+                className={`border-b border-[#c8d8e8] transition-colors hover:bg-[#cddceb] ${
+                  i % 2 === 0 ? "bg-[#f0f5fa]" : "bg-white"
+                }`}
               >
                 <td className="px-4 py-2">{cantidad}</td>
                 <td className="px-4 py-2 text-center">{unidad}</td>
@@ -176,180 +226,164 @@ const Unidad2 = () => {
           </tbody>
         </table>
 
-        <h4>Conversión de unidades de área</h4>
-        <p>
-          Supongamos que tenemos el siguiente problema, Un tablero de avisos
-          tiene una área de 2.5 m2 . Exprese esta área en centímetros cuadrados
-          (cm2 ).
+        <h3
+          id="conversion-area"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Conversión de unidades de área
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Supongamos que un tablero de avisos tiene un área de 2.5 m<sup>2</sup>
+          . Queremos expresar esta área en centímetros cuadrados (cm<sup>2</sup>
+          ).
         </p>
-        <p>
-          Este problema es una conversión de unidades de área, y sabemos que 1 m
-          = 100 cm. Por lo tanto, habría que elevar al cuadrado para obtener
-          metros cuadrados y centímetros cuadrados.
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Dado que 1 m = 100 cm, hay que elevar al cuadrado el factor lineal
+          para convertir unidades de área.
         </p>
-        <p>
-          Un error común en esta clase de conversiones es usar factores
-          incorrectos. Dado que 1 m = 100 cm, algunos suponen que 1 m
-          <sup>2</sup> = 100 cm<sup>2</sup> , lo cual es falso. El factor de
-          conversión de área correcto puede obtenerse directamente del factor de
-          conversión lineal correcto, 100 cm/m, o 10<sup>2</sup>cm/m, elevándolo
-          al cuadrado el factor de conversión lineal:
-        </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
             "$$ \\left( \\frac{10^2 cm}{1 m} \\right)^2 = \\frac{10^4 cm^2}{1 m^2} $$"
           }
         </p>
-        <p>
-          Entonces, 1 m<sup>2</sup> = 10<sup>4</sup> cm<sup>2</sup> (10 000 cm
-          <sup>2</sup>), y podemos escribir lo siguiente:
-        </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
             "$$ 2.5 m^2 \\times \\frac{10^4 cm^2}{1 m^2} = 2.5 \\times 10^4 cm^2 $$"
           }
         </p>
 
-        <h4>Cifras significativas</h4>
-        <p>
+        <h3
+          id="cifras-significativas"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Cifras significativas
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Al resolver problemas en física se utilizan números exactos y números
           medidos.
         </p>
-        <ul>
-          <li>
-            Los números exactos no tienen error ni incertidumbre (por ejemplo,
-            constantes o relaciones matemáticas).
+        <ul className="list-disc text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Los números exactos no tienen error ni incertidumbre.
           </li>
-          <li>
+          <li className="text-base leading-7 text-[#141414] my-2">
             Los números medidos provienen de mediciones y siempre tienen cierto
             grado de incertidumbre.
           </li>
         </ul>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Para expresar la precisión de una medición se utilizan las cifras
           significativas, que son los dígitos conocidos con certeza más un
-          último dígito estimado. Cuantas más cifras significativas tenga una
-          medición, mayor es su precisión.
-        </p>
-        <p>
-          Las cifras significativas siguen ciertas reglas para determinar qué
-          dígitos cuentan en una medición:
-        </p>
-        <ol>
-          <li>
-            Ceros a la izquierda no son significativos; solo indican la posición
-            del punto decimal (ej.: 0.0254 tiene 3 cifras significativas).
-          </li>
-          <li>
-            Ceros entre dígitos sí son significativos (ej.: 104.6 tiene 4 cifras
-            significativas).
-          </li>
-          <li>
-            Ceros al final después del punto decimal son significativos (ej.:
-            2705.0 tiene 5 cifras significativas).
-          </li>
-          <li>
-            Ceros finales en números enteros sin punto decimal pueden ser
-            ambiguos (ej.: 500 puede tener 1, 2 o 3 cifras significativas).
-          </li>
-        </ol>
-        <p>
-          Para evitar esta ambigüedad se usa la notación científica, que muestra
-          claramente cuántas cifras significativas hay (por ejemplo, 5.0 x 10{" "}
-          <sup>2</sup>
-          5.0 x 10 <sup>2</sup> tiene 2 cifras significativas y 5.00 x 10{" "}
-          <sup>2</sup> 5.00x10 <sup>2</sup> tiene 3).
+          último dígito estimado.
         </p>
 
-        <p>Cifras significativas en cálculos:</p>
-        <ul>
-          <li>
-            Multiplicación y división: el resultado debe tener el mismo número
-            de cifras significativas que la cantidad con menos cifras
+        <ol className="list-decimal text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8 space-y-2">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Ceros a la izquierda no son significativos.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Ceros entre dígitos sí son significativos.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Ceros al final después del punto decimal son significativos.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Ceros finales en enteros sin punto decimal pueden ser ambiguos.
+          </li>
+        </ol>
+
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para evitar ambigüedad se usa notación científica, que muestra con
+          claridad cuántas cifras significativas tiene un número.
+        </p>
+
+        <p className="text-base leading-7 text-[#141414] my-2 font-semibold">
+          Cifras significativas en cálculos:
+        </p>
+        <ul className="list-disc text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Multiplicación y división: el resultado debe tener la misma cantidad
+            de cifras significativas que el valor con menos cifras
             significativas.
           </li>
-          <li>
+          <li className="text-base leading-7 text-[#141414] my-2">
             Suma y resta: el resultado debe tener el mismo número de decimales
-            que la cantidad con menos posiciones decimales.
+            que la cantidad menos precisa.
           </li>
         </ul>
 
-        <h4>Reglas para redondear</h4>
-        <p>
-          Para redondear números al aplicar cifras significativas se siguen
-          estas reglas:
-        </p>
-        <ol>
-          <li>
-            Si el primer dígito que se elimina es menor que 5, el dígito
-            anterior permanece igual.
+        <h3
+          id="redondeo"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Reglas para redondear
+        </h3>
+        <ol className="list-decimal text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8 space-y-2">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Si el primer dígito eliminado es menor que 5, el anterior permanece
+            igual.
           </li>
-          <li>
-            Si el primer dígito que se elimina es 5 o más, el dígito anterior se
-            incrementa en 1.
-          </li>
-        </ol>
-        <p>
-          Estas reglas reflejan que el resultado de un cálculo no puede ser más
-          preciso que la medición menos precisa utilizada, por lo que las
-          operaciones matemáticas no aumentan la exactitud de los datos.
-        </p>
-
-        <h4>Resolución de problemas</h4>
-        <p>
-          La resolución de problemas es una parte fundamental de la física y
-          consiste en aplicar principios y ecuaciones a datos específicos para
-          encontrar una cantidad desconocida. Aunque no existe un método único,
-          se recomienda seguir un procedimiento general:
-        </p>
-        <ol>
-          <li>
-            Leer y analizar el problema para identificar qué se pide y qué datos
-            se dan.
-          </li>
-          <li>Dibujar un diagrama para visualizar la situación si es útil.</li>
-          <li>
-            Anotar los datos y las incógnitas, asegurándose de usar el mismo
-            sistema de unidades (normalmente el SI).
-          </li>
-          <li>
-            Elegir los principios y ecuaciones apropiados y planear una
-            estrategia de solución.
-          </li>
-          <li>
-            Sustituir los datos y realizar los cálculos, expresando el resultado
-            con unidades y cifras significativas correctas.
-          </li>
-          <li>
-            Verificar si el resultado es razonable, evaluando si su magnitud
-            tiene sentido.
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Si el primer dígito eliminado es 5 o más, el anterior aumenta en 1.
           </li>
         </ol>
-        <p>
-          Este procedimiento ayuda a estructurar el análisis y facilita la
-          solución de problemas tanto numéricos como conceptuales.
-        </p>
 
-        {/* Practica */}
-        <h3 className="text-[#1d2554]">Práctica</h3>
+        <h3
+          id="resolucion-problemas"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Resolución de problemas
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          La resolución de problemas consiste en aplicar principios y ecuaciones
+          a datos específicos para encontrar una cantidad desconocida.
+        </p>
+        <ol className="list-decimal text-sm md:text-base lg:text-lg mt-3 md:mt-4 pl-6 md:pl-8 space-y-2">
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Leer y analizar el problema.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Dibujar un diagrama si resulta útil.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Anotar datos e incógnitas en un mismo sistema de unidades.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Elegir principios y ecuaciones apropiados.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Sustituir datos y realizar cálculos correctamente.
+          </li>
+          <li className="text-base leading-7 text-[#141414] my-2">
+            Verificar si el resultado es razonable.
+          </li>
+        </ol>
+
+        <h2
+          id="practica"
+          className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
+        >
+          Práctica
+        </h2>
         <hr />
-        <ul className="flex gap-2 flex-wrap">
+
+        <ul className="flex gap-2 flex-wrap mt-4">
           {ejercicios.map((numero) => (
             <Link
               key={numero}
               to={`/la-medicion/ejercicio-${numero}`}
-              className="bg-[#1d2554] text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-sm sm:text-base rounded mt-4 hover:bg-[#374785] transition-colors"
+              className="bg-[#1d2554] text-white px-3 py-2 text-sm sm:text-base rounded hover:bg-[#374785] transition-colors"
             >
               {`Ejercicio ${numero}`}
             </Link>
           ))}
         </ul>
 
-        <Outlet />
-
-        <ContactSection />
-      </section>
-    </MathJax>
+        <div className="mt-8">
+          <Outlet />
+        </div>
+      </MathJax>
+    </DocsLayout>
   );
 };
 

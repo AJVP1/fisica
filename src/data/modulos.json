@@ -25,30 +25,21 @@
       "title": "Primer parcial",
       "items": [
         {
-          "to": "/fundamentos",
-          "label": "Fundamentos",
+          "to": "/la-medicion",
+          "label": "La medición",
           "icon": "code",
           "toc": [
-            {
-              "id": "inversion-control",
-              "title": "Inversión de control (IoC)"
-            },
-            {
-              "id": "inyeccion-dependencias",
-              "title": "Inyección de dependencias (DI)"
-            },
-            {
-              "id": "beans",
-              "title": "Beans"
-            },
-            {
-              "id": "configuracion",
-              "title": "Configuración (@Configuration)"
-            },
-            {
-              "id": "properties",
-              "title": "application.properties / yml"
-            }
+            { "id": "teoria", "title": "Teoría" },
+            { "id": "por-que-medimos", "title": "¿Por qué medimos?" },
+            { "id": "unidades-base", "title": "Unidades base" },
+            { "id": "prefijos-si", "title": "Prefijos del Sistema Internacional" },
+            { "id": "conversion-unidades", "title": "Conversión de unidades" },
+            { "id": "unidades-cantidades-comunes", "title": "Unidades de cantidades comunes" },
+            { "id": "conversion-area", "title": "Conversión de unidades de área" },
+            { "id": "cifras-significativas", "title": "Cifras significativas" },
+            { "id": "redondeo", "title": "Reglas para redondear" },
+            { "id": "resolucion-problemas", "title": "Resolución de problemas" },
+            { "id": "practica", "title": "Práctica" }
           ]
         }
       ]

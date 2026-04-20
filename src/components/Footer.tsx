@@ -8,7 +8,11 @@ export default function Footer() {
   // Obtenemos la ruta actual
   const { pathname } = useLocation();
   // Buscamos el índice del item que coincide con la ruta actual
-  const currentIndex = allItems.findIndex((item) => item.to === pathname);
+  const currentIndex = allItems.findIndex(
+    (item) =>
+      item.to === pathname ||
+      (item.to !== "/" && pathname.startsWith(item.to + "/"))
+  );
 
   // Si el indice actual no es el primero, mostramos enlace anterior, sino no mostramos
   const prev = currentIndex > 0 ? allItems[currentIndex - 1] : null;
