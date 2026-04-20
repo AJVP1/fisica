@@ -116,6 +116,40 @@
               "title": "Práctica"
             }
           ]
+        },
+        {
+          "to": "/hidroestatica",
+          "label": "Hidroestática",
+          "icon": "code",
+          "toc": [
+            { "id": "definicion", "title": "Definición" },
+            {
+              "id": "presion",
+              "title": "Presión"
+            },
+            {
+              "id": "densidad",
+              "title": "Densidad"
+            },
+            {
+              "id": "teorema-fundamental-hidroestatica",
+              "title": "Teorema fundamental de la hidrostática"
+            },
+            {
+              "id": "principio-de-pascal",
+              "title": "Principio de Pascal"
+            },
+            {
+              "id": "principio-de-arquimedes",
+              "title": "Principio de Arquímedes"
+            },
+            { "id": "presion-atmosferica", "title": "Presión atmosférica" },
+            { "id": "cilindros", "title": "Cilindros" },
+            {
+              "id": "practica",
+              "title": "Práctica"
+            }
+          ]
         }
       ]
     },

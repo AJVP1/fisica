@@ -85,7 +85,7 @@ function App() {
             </Route>
 
             <Route
-              path="/hidrostatica"
+              path="/hidroestatica"
               element={
                 <AuthRoute>
                   <Unidad5 />
