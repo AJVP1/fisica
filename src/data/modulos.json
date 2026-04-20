@@ -83,6 +83,39 @@
               "title": "Práctica"
             }
           ]
+        },
+        {
+          "to": "/estatica",
+          "label": "Estática",
+          "icon": "code",
+          "toc": [
+            { "id": "definicion", "title": "Definición" },
+            {
+              "id": "condiciones-de-equilibrio",
+              "title": "Condiciones de equilibrio"
+            },
+            {
+              "id": "fuerza",
+              "title": "Fuerza"
+            },
+            {
+              "id": "momento-de-una-fuerza",
+              "title": "Momento de una fuerza (Torque)"
+            },
+            {
+              "id": "equilibrio-traslacional",
+              "title": "Equilibrio traslacional (Fuerzas concurrentes)"
+            },
+            {
+              "id": "equilibrio-rotacional",
+              "title": "Equilibrio rotacional (Fuerzas no concurrentes)"
+            },
+            { "id": "centro-de-masa", "title": "Centro de masa" },
+            {
+              "id": "practica",
+              "title": "Práctica"
+            }
+          ]
         }
       ]
     },
