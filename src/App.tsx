@@ -63,7 +63,7 @@ function App() {
             </Route>
 
             <Route
-              path="/magnitudes-fisica"
+              path="/magnitudes-fisicas"
               element={
                 <AuthRoute>
                   <Unidad3 />

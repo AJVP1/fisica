@@ -1,216 +1,292 @@
-// importamos Link para navegacion interna
 import { Link, Outlet } from "react-router-dom";
-// importamos MathJax para formulas matematicas
 import { MathJax } from "better-react-mathjax";
-// importamos componente de contacto
-import ContactSection from "../../components/Contacto";
 
-const Unidad2 = () => {
+import { DocsLayout } from "../../layout/Docs.tsx";
+import { TableOfContents } from "../../components/TableOfContents.tsx";
+import modulosData from "../../data/modulos.json";
+
+const Unidad3 = () => {
   const ejercicios = Array.from({ length: 8 }, (_, i) => i + 1);
 
   return (
-    <MathJax>
-      <section className="bg-[#fafafa] max-w-270 mx-auto p-3 sm:p-4 md:p-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#1d2554] mt-6">
+    <DocsLayout
+      toc={<TableOfContents items={modulosData.sidebar[1].items[1].toc} />}
+    >
+      <MathJax>
+        <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
           Magnitudes físicas
-        </h2>
+        </h1>
 
-        <h3 className="text-[#1d2554]">Teoría</h3>
+        <p className="text-xl text-[#757575] leading-relaxed">
+          Las magnitudes físicas permiten describir cuantitativamente los
+          fenómenos naturales. Pueden clasificarse en escalares y vectoriales,
+          según requieran o no dirección y sentido.
+        </p>
+
+        <h2
+          id="teoria"
+          className="text-2xl font-bold mt-12 mb-4 text-[#141414] scroll-mt-20"
+        >
+          Teoría
+        </h2>
         <hr />
 
-        <h4>Escalar</h4>
-        <p>
-          Escalar se define como un número real que sirve para describir un
-          fenómeno físico con magnitud. Se representa por un único número (única
-          coordenada) invariable en cualquier sistema de referencia, acompañado
-          de sus unidades. Ejemplo: temperatura de un cuerpo, 19 °C.
+        <h3
+          id="escalar"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Escalar
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Un escalar es un número real que sirve para describir un fenómeno
+          físico con magnitud. Se representa por un único valor numérico,
+          acompañado de sus unidades. Por ejemplo: la temperatura de un cuerpo,
+          19 °C.
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Un campo escalar es un campo que asigna un valor escalar a cada punto
-          del espacio. Ejemplo: temperatura en una habitación, donde cada punto
-          tiene un valor de temperatura diferente.
+          del espacio. Por ejemplo: la temperatura en una habitación, donde cada
+          punto puede tener un valor distinto.
         </p>
 
-        <h4>Vector</h4>
-        <p>
+        <h3
+          id="vector"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Vector
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Un vector es una representación geométrica de una magnitud física que
-          tiene módulo (longitud), dirección (orientación) y sentido (se
-          distingue el origen del extremo). Ejemplo: velocidad, esta se
-          representa como segmentos de recta dirigidos.
+          tiene módulo, dirección y sentido. Ejemplo: la velocidad.
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Para representar vectores en el plano cartesiano es necesario definir
-          vectores unitarios para las direcciones $x$, $y$ y $z$. Por ejemplo,
-          podemos definir{" "}
+          vectores unitarios para las direcciones x, y y z.
         </p>
-        <p>{"$$ \\vec{a} = (5, 3) $$"}</p>
-        <p>
-          Donde $5$ es la componente en la dirección $x$ y $3$ es la componente
-          en la dirección $y$. Y este mismo vector se puede representar como
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\vec{a} = (5, 3) $$"}
         </p>
-        <p>{"$$ \\vec{a} = 5\\hat{i} + 3\\hat{j}$$"}</p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Donde 5 es la componente en la dirección x y 3 es la componente en la
+          dirección y.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\vec{a} = 5\\hat{i} + 3\\hat{j}$$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
             "Donde $\\hat{i}$ y $\\hat{j}$ son los vectores unitarios en las direcciones $x$ y $y$, respectivamente."
           }
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "Para saber el ángulo que forma un vector con el eje $x$, se utiliza la función tangente: $\\theta = \\arctan\\left(\\frac{a_y}{a_x}\\right)$."
+            "Para hallar el ángulo que forma un vector con el eje $x$, se utiliza la función tangente:"
           }
         </p>
-        <p>
+        <p>{"$$ \\theta = \\arctan\\left(\\frac{a_y}{a_x}\\right) $$"}</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "Para saber la longitud de un vector, se utiliza el teorema de Pitágoras: $|\\vec{a}| = \\sqrt{a_x^2 + a_y^2}$."
+            "Para hallar la longitud de un vector, se utiliza el teorema de Pitágoras: $|\\vec{a}| = \\sqrt{a_x^2 + a_y^2}$."
           }
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Un campo vectorial es un campo que asigna un vector a cada punto del
-          espacio. Ejemplo: flechas sobre un mapa que indiquen la dirección y
-          magnitud del viento.
+          espacio. Por ejemplo: las flechas que representan la dirección y la
+          intensidad del viento sobre un mapa.
         </p>
 
-        <h4>Suma de vectores</h4>
-        <p>
+        <h3
+          id="suma-de-vectores"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Suma de vectores
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "para sumar dos vectores, se suman sus componentes correspondientes. Por ejemplo: para sumar $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, se obtiene $\\vec{a} + \\vec{b} = (a_x + b_x, a_y + b_y)$."
+            "Para sumar dos vectores, se suman sus componentes correspondientes. Si $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, entonces $\\vec{a} + \\vec{b} = (a_x + b_x, a_y + b_y)$."
           }
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
             "Por ejemplo, sean los vectores $\\vec{a} = (2, 3)$ y $\\vec{b} = (1, 4)$."
           }
         </p>
-        <p>{`$$\\vec{a} + \\vec{b} = (2+1, 3+4) = (3, 7)$$`}</p>
-        <p>
-          De forma gráfica, la suma de vectores se puede representar mediante la
-          regla del paralelogramo o la regla del triángulo. Para la regla del
-          triángulo, se coloca el origen de uno de los vectores en el extremo
-          del otro y se traza un vector desde el origen del primero hasta el
-          extremo del segundo.
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\vec{a} + \\vec{b} = (2+1, 3+4) = (3, 7)$$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          De forma gráfica, la suma se puede representar mediante la regla del
+          paralelogramo o la regla del triángulo.
         </p>
 
-        <h4>Resta de vectores</h4>
-        <p>
+        <h3
+          id="resta-de-vectores"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Resta de vectores
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "para restar dos vectores, se resta su componentes correspondientes. Por ejemplo: para restar $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, se obtiene $\\vec{a} - \\vec{b} = (a_x - b_x, a_y - b_y)$."
+            "Para restar dos vectores, se restan sus componentes correspondientes. Si $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, entonces $\\vec{a} - \\vec{b} = (a_x - b_x, a_y - b_y)$."
           }
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
             "Por ejemplo, sean los vectores $\\vec{a} = (2, 3)$ y $\\vec{b} = (1, 4)$."
           }
         </p>
-        <p>{`$$\\vec{a} - \\vec{b} = (2-1, 3-4) = (1, -1)$$`}</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\vec{a} - \\vec{b} = (2-1, 3-4) = (1, -1)$$`}
+        </p>
 
-        <h4>Producto de un escalar por un vector</h4>
-        <p>
+        <h3
+          id="producto-escalar-por-vector"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Producto de un escalar por un vector
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "para multiplicar un escalar por un vector, se multiplica el escalar por cada componente del vector. Por ejemplo: para multiplicar $k$ por $\\vec{a} = (a_x, a_y)$, se obtiene $k\\vec{a} = (ka_x, ka_y)$."
+            "Para multiplicar un escalar por un vector, se multiplica el escalar por cada componente del vector. Si $k$ es un escalar y $\\vec{a} = (a_x, a_y)$, entonces $k\\vec{a} = (ka_x, ka_y)$."
           }
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Esta multiplicación da como resultado un vector con igual dirección,
-          pero con módulo y un sentido determinados por el valor y el signo del
-          escalar que se multiplica por él.
+          pero con módulo y sentido determinados por el valor y el signo del
+          escalar.
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           {
-            "Por ejemplo, sea $k = 2$ y $\\vec{a} = (2, 3)$, entonces $k\\vec{a} = (4, 6)$."
+            "Por ejemplo, si $k = 2$ y $\\vec{a} = (2, 3)$, entonces $k\\vec{a} = (4, 6)$."
           }
         </p>
-        <p>{`$$k\\vec{a} = 2(2, 3) = (2 \\cdot 2, 2 \\cdot 3) = (4, 6)$$`}</p>
-
-        <h4>Producto escalar o producto punto</h4>
-        <p>
-          {
-            "Es una operación definida sobre dos vectores. El resultado es un escalar. Para calcular el producto escalar de dos vectores, se multiplican sus componentes correspondientes y luego se suman los resultados. Por ejemplo: para calcular el producto escalar de $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, se obtiene $\\vec{a} \\cdot \\vec{b} = a_x b_x + a_y b_y$."
-          }
-        </p>
-        <p>
-          {
-            "Por ejemplo, sean los vectores $\\vec{a} = (2, 3)$ y $\\vec{b} = (1, 4)$, entonces $\\vec{a} \\cdot \\vec{b} = 2 \\cdot 1 + 3 \\cdot 4 = 14$."
-          }
-        </p>
-        <p>{`$$\\vec{a} \\cdot \\vec{b} = (2, 3) \\cdot (1, 4) = 2 \\cdot 1 + 3 \\cdot 4 = 14$$`}</p>
-        <p>
-          {
-            " El producto escalar es útil para determinar el ángulo entre dos vectores, ya que se puede usar la fórmula $\\cos(\\theta) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| |\\vec{b}|}$."
-          }
-        </p>
-        <p>
-          Si el producto escalar entre dos vectores es cero, los vectores son
-          perpendiculares.
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$k\\vec{a} = 2(2, 3) = (2 \\cdot 2, 2 \\cdot 3) = (4, 6)$$`}
         </p>
 
-        <h4>Producto vectorial</h4>
+        <h3
+          id="producto-escalar"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Producto escalar o producto punto
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "Es una operación entre dos vectores cuyo resultado es un escalar. Si $\\vec{a} = (a_x, a_y)$ y $\\vec{b} = (b_x, b_y)$, entonces $\\vec{a} \\cdot \\vec{b} = a_x b_x + a_y b_y$."
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "Por ejemplo, sean $\\vec{a} = (2, 3)$ y $\\vec{b} = (1, 4)$, entonces:"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\vec{a} \\cdot \\vec{b} = (2, 3) \\cdot (1, 4) = 2 \\cdot 1 + 3 \\cdot 4 = 14$$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "También se puede usar para determinar el ángulo entre dos vectores mediante la fórmula:"
+          }
+        </p>
         <p>
+          {
+            "$$ \\cos(\\theta) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| |\\vec{b}|} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Si el producto escalar entre dos vectores es cero, entonces los
+          vectores son perpendiculares.
+        </p>
+
+        <h3
+          id="producto-vectorial"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Producto vectorial
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Es una operación definida sobre dos vectores en el espacio
-          tridimensional. Se define como
+          tridimensional.
         </p>
-        <p>{`$$\\vec{a} \\times \\vec{b} = (a_y b_z - a_z b_y, a_z b_x - a_x b_z, a_x b_y - a_y b_x)$$`}</p>
-        <p>
-          Este producto da como resultado un vector perpendicular a ambos
-          vectores originales.
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\vec{a} \\times \\vec{b} = (a_y b_z - a_z b_y, a_z b_x - a_x b_z, a_x b_y - a_y b_x)$$`}
         </p>
-        <p>
-          Geométricamente, el producto vectorial es el área del paralelogramo
+        <p className="text-base leading-7 text-[#141414] my-2">
+          El resultado es un vector perpendicular a ambos vectores originales.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Geométricamente, su módulo representa el área del paralelogramo
           formado por los dos vectores.
         </p>
 
-        <h4>Trigonometría</h4>
-        <p>
-          Vamos a agregar unas funciones trigonométricas que serán necesarias
-          para el desarrollo de la materia.
+        <h3
+          id="trigonometria"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Trigonometría
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Las funciones trigonométricas serán necesarias para el desarrollo de
+          la materia.
         </p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Dado un triángulo rectángulo con ángulo $\theta$, cateto opuesto $y$,
-          cateto adyacente $x$ e hipotenusa $h$, las funciones trigonométricas
-          fundamentales se definen como:
+          cateto adyacente $x$ e hipotenusa $h$, se definen como:
         </p>
-        <p>{`$$\\sin\\theta = \\frac{y}{h}, \\quad \\cos\\theta = \\frac{x}{h}, \\quad \\tan\\theta = \\frac{y}{x}$$`}</p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\sin\\theta = \\frac{y}{h}, \\quad \\cos\\theta = \\frac{x}{h}, \\quad \\tan\\theta = \\frac{y}{x}$$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Estas relaciones permiten descomponer un vector en sus componentes
-          cartesianas. Si un vector {`$\\vec{v}$`} tiene módulo {`$|\\vec{v}|$`}{" "}
-          y forma un ángulo {`$\\theta$`} con el eje $x$, entonces:
+          cartesianas.
         </p>
-        <p>{`$$v_x = |\\vec{v}|\\cos\\theta, \\quad v_y = |\\vec{v}|\\sin\\theta$$`}</p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$v_x = |\\vec{v}|\\cos\\theta, \\quad v_y = |\\vec{v}|\\sin\\theta$$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Inversamente, dado un vector de componentes $(v_x, v_y)$, su módulo y
-          ángulo se obtienen como:
+          su ángulo se obtienen como:
         </p>
-        <p>{`$$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}, \\quad \\theta = \\arctan\\!\\left(\\frac{v_y}{v_x}\\right)$$`}</p>
-        <p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}, \\quad \\theta = \\arctan\\!\\left(\\frac{v_y}{v_x}\\right)$$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
           Nota: en el segundo y tercer cuadrante se debe sumar 180° al ángulo
           obtenido.
         </p>
-        <p>
-          La identidad trigonométrica fundamental, que se deduce directamente
-          del teorema de Pitágoras, es:
+        <p className="text-base leading-7 text-[#141414] my-2">
+          La identidad trigonométrica fundamental es:
         </p>
-        <p>{`$$\\sin^2\\theta + \\cos^2\\theta = 1$$`}</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$\\sin^2\\theta + \\cos^2\\theta = 1$$`}
+        </p>
 
-        {/* Practica */}
-        <h3 className="text-[#1d2554]">Práctica</h3>
+        <h2
+          id="practica"
+          className="text-2xl font-bold mt-12 mb-4 text-[#141414] scroll-mt-20"
+        >
+          Práctica
+        </h2>
         <hr />
-        <ul className="flex gap-2 flex-wrap">
+
+        <ul className="flex gap-2 flex-wrap mt-4">
           {ejercicios.map((numero) => (
             <Link
               key={numero}
-              to={`/magnitudes-fisica/ejercicio-${numero}`}
-              className="bg-[#1d2554] text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-sm sm:text-base rounded mt-4 hover:bg-[#374785] transition-colors"
+              to={`/magnitudes-fisicas/ejercicio-${numero}`}
+              className="bg-[#1d2554] text-white px-3 py-2 text-sm sm:text-base rounded hover:bg-[#374785] transition-colors"
             >
               {`Ejercicio ${numero}`}
             </Link>
           ))}
         </ul>
 
-        <Outlet />
-
-        <ContactSection />
-      </section>
-    </MathJax>
+        <div className="mt-8">
+          <Outlet />
+        </div>
+      </MathJax>
+    </DocsLayout>
   );
 };
 
-export default Unidad2;
+export default Unidad3;

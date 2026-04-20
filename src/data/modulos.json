@@ -29,17 +29,59 @@
           "label": "La medición",
           "icon": "code",
           "toc": [
-            { "id": "teoria", "title": "Teoría" },
             { "id": "por-que-medimos", "title": "¿Por qué medimos?" },
             { "id": "unidades-base", "title": "Unidades base" },
-            { "id": "prefijos-si", "title": "Prefijos del Sistema Internacional" },
+            {
+              "id": "prefijos-si",
+              "title": "Prefijos del Sistema Internacional"
+            },
             { "id": "conversion-unidades", "title": "Conversión de unidades" },
-            { "id": "unidades-cantidades-comunes", "title": "Unidades de cantidades comunes" },
-            { "id": "conversion-area", "title": "Conversión de unidades de área" },
+            {
+              "id": "unidades-cantidades-comunes",
+              "title": "Unidades de cantidades comunes"
+            },
+            {
+              "id": "conversion-area",
+              "title": "Conversión de unidades de área"
+            },
             { "id": "cifras-significativas", "title": "Cifras significativas" },
             { "id": "redondeo", "title": "Reglas para redondear" },
-            { "id": "resolucion-problemas", "title": "Resolución de problemas" },
+            {
+              "id": "resolucion-problemas",
+              "title": "Resolución de problemas"
+            },
             { "id": "practica", "title": "Práctica" }
+          ]
+        },
+        {
+          "to": "/magnitudes-fisicas",
+          "label": "Magnitudes físicas",
+          "icon": "code",
+          "toc": [
+            { "id": "escalar", "title": "Escalar" },
+            { "id": "vector", "title": "Vector" },
+            {
+              "id": "suma-de-vectores",
+              "title": "Suma de vectores"
+            },
+            { "id": "resta-de-vectores", "title": "Resta de vectores" },
+            {
+              "id": "producto-escalar-por-vector",
+              "title": "Producto de un escalar por un vector"
+            },
+            {
+              "id": "producto-escalar",
+              "title": "Producto escalar o producto punto"
+            },
+            { "id": "producto-vectorial", "title": "Producto vectorial" },
+            {
+              "id": "trigonometria",
+              "title": "Trigonometría"
+            },
+            {
+              "id": "practica",
+              "title": "Práctica"
+            }
           ]
         }
       ]
