@@ -150,6 +150,38 @@
               "title": "Práctica"
             }
           ]
+        },
+        {
+          "to": "/cinematica-una-dimension",
+          "label": "Cinemática en una dimensión",
+          "icon": "code",
+          "toc": [
+            { "id": "definicion", "title": "Definición" },
+            {
+              "id": "sistema-de-referencia",
+              "title": "Sistema de referencia"
+            },
+            {
+              "id": "tipos-de-movimiento",
+              "title": "Tipos de movimiento"
+            },
+            {
+              "id": "velocidad-y-aceleracion",
+              "title": "Velocidad y aceleración"
+            },
+            {
+              "id": "velocidad-media-e-instantanea",
+              "title": "Velocidad media e instantánea"
+            },
+            {
+              "id": "aceleracion-media-e-instantanea",
+              "title": "Aceleración media e instantánea"
+            },
+            {
+              "id": "practica",
+              "title": "Práctica"
+            }
+          ]
         }
       ]
     },
