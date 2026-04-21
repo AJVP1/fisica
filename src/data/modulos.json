@@ -216,6 +216,46 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Parciales anteriores",
+      "items": [
+        {
+          "to": "/2c-2025",
+          "label": "2c-2025",
+          "icon": "lock",
+          "toc": [
+            {
+              "id": "ejercicio-1",
+              "title": "Ejercicio 1"
+            },
+            {
+              "id": "ejercicio-2",
+              "title": "Ejercicio 2"
+            },
+            {
+              "id": "ejercicio-3",
+              "title": "Ejercicio 3"
+            },
+            {
+              "id": "ejercicio-4",
+              "title": "Ejercicio 4"
+            },
+            {
+              "id": "ejercicio-5",
+              "title": "Ejercicio 5"
+            },
+            {
+              "id": "ejercicio-6",
+              "title": "Ejercicio 6"
+            },
+            {
+              "id": "ejercicio-7",
+              "title": "Ejercicio 7"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -4,40 +4,79 @@ import { AuthRoute } from "../auth/Auth.tsx";
 import LoginPage from "../auth/LoginPage.tsx";
 
 const lazyRoute = (importer: () => Promise<{ default: ComponentType }>) => ({
-  lazy: () => importer().then(m => ({ Component: m.default })),
+  lazy: () => importer().then((m) => ({ Component: m.default })),
 });
 
 const ejercicioNoEncontrado = {
   path: "*",
   element: (
     <section className="bg-[#fafafa] max-w-270 mx-auto p-6">
-      <h2 className="text-2xl font-semibold text-center mt-6">Ejercicio no encontrado</h2>
+      <h2 className="text-2xl font-semibold text-center mt-6">
+        Ejercicio no encontrado
+      </h2>
     </section>
   ),
 };
 
 export const router = createHashRouter([
   {
-    element: <AuthRoute><Outlet /></AuthRoute>,
+    element: (
+      <AuthRoute>
+        <Outlet />
+      </AuthRoute>
+    ),
     children: [
       {
         path: "/",
-        lazy: () => import("../pages/Introduccion.tsx").then(m => ({ Component: m.Introduccion })),
+        lazy: () =>
+          import("../pages/Introduccion.tsx").then((m) => ({
+            Component: m.Introduccion,
+          })),
       },
       {
         path: "/la-medicion",
         ...lazyRoute(() => import("../pages/Unidad2/Teoria")),
         children: [
-          { path: "ejercicio-1",  ...lazyRoute(() => import("../pages/Unidad2/E1")) },
-          { path: "ejercicio-2",  ...lazyRoute(() => import("../pages/Unidad2/E2")) },
-          { path: "ejercicio-3",  ...lazyRoute(() => import("../pages/Unidad2/E3")) },
-          { path: "ejercicio-4",  ...lazyRoute(() => import("../pages/Unidad2/E4")) },
-          { path: "ejercicio-5",  ...lazyRoute(() => import("../pages/Unidad2/E5")) },
-          { path: "ejercicio-6",  ...lazyRoute(() => import("../pages/Unidad2/E6")) },
-          { path: "ejercicio-7",  ...lazyRoute(() => import("../pages/Unidad2/E7")) },
-          { path: "ejercicio-8",  ...lazyRoute(() => import("../pages/Unidad2/E8")) },
-          { path: "ejercicio-9",  ...lazyRoute(() => import("../pages/Unidad2/E9")) },
-          { path: "ejercicio-10", ...lazyRoute(() => import("../pages/Unidad2/E10")) },
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad2/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad2/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad2/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad2/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad2/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad2/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad2/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad2/E8")),
+          },
+          {
+            path: "ejercicio-9",
+            ...lazyRoute(() => import("../pages/Unidad2/E9")),
+          },
+          {
+            path: "ejercicio-10",
+            ...lazyRoute(() => import("../pages/Unidad2/E10")),
+          },
           ejercicioNoEncontrado,
         ],
       },
@@ -45,14 +84,38 @@ export const router = createHashRouter([
         path: "/magnitudes-fisicas",
         ...lazyRoute(() => import("../pages/Unidad3/Teoria")),
         children: [
-          { path: "ejercicio-1", ...lazyRoute(() => import("../pages/Unidad3/E1")) },
-          { path: "ejercicio-2", ...lazyRoute(() => import("../pages/Unidad3/E2")) },
-          { path: "ejercicio-3", ...lazyRoute(() => import("../pages/Unidad3/E3")) },
-          { path: "ejercicio-4", ...lazyRoute(() => import("../pages/Unidad3/E4")) },
-          { path: "ejercicio-5", ...lazyRoute(() => import("../pages/Unidad3/E5")) },
-          { path: "ejercicio-6", ...lazyRoute(() => import("../pages/Unidad3/E6")) },
-          { path: "ejercicio-7", ...lazyRoute(() => import("../pages/Unidad3/E7")) },
-          { path: "ejercicio-8", ...lazyRoute(() => import("../pages/Unidad3/E8")) },
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad3/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad3/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad3/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad3/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad3/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad3/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad3/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad3/E8")),
+          },
           ejercicioNoEncontrado,
         ],
       },
@@ -60,15 +123,42 @@ export const router = createHashRouter([
         path: "/estatica",
         ...lazyRoute(() => import("../pages/Unidad4/Teoria")),
         children: [
-          { path: "ejercicio-1", ...lazyRoute(() => import("../pages/Unidad4/E1")) },
-          { path: "ejercicio-2", ...lazyRoute(() => import("../pages/Unidad4/E2")) },
-          { path: "ejercicio-3", ...lazyRoute(() => import("../pages/Unidad4/E3")) },
-          { path: "ejercicio-4", ...lazyRoute(() => import("../pages/Unidad4/E4")) },
-          { path: "ejercicio-5", ...lazyRoute(() => import("../pages/Unidad4/E5")) },
-          { path: "ejercicio-6", ...lazyRoute(() => import("../pages/Unidad4/E6")) },
-          { path: "ejercicio-7", ...lazyRoute(() => import("../pages/Unidad4/E7")) },
-          { path: "ejercicio-8", ...lazyRoute(() => import("../pages/Unidad4/E8")) },
-          { path: "ejercicio-9", ...lazyRoute(() => import("../pages/Unidad4/E9")) },
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad4/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad4/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad4/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad4/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad4/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad4/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad4/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad4/E8")),
+          },
+          {
+            path: "ejercicio-9",
+            ...lazyRoute(() => import("../pages/Unidad4/E9")),
+          },
           ejercicioNoEncontrado,
         ],
       },
@@ -76,14 +166,38 @@ export const router = createHashRouter([
         path: "/hidroestatica",
         ...lazyRoute(() => import("../pages/Unidad5/Teoria")),
         children: [
-          { path: "ejercicio-1", ...lazyRoute(() => import("../pages/Unidad5/E1")) },
-          { path: "ejercicio-2", ...lazyRoute(() => import("../pages/Unidad5/E2")) },
-          { path: "ejercicio-3", ...lazyRoute(() => import("../pages/Unidad5/E3")) },
-          { path: "ejercicio-4", ...lazyRoute(() => import("../pages/Unidad5/E4")) },
-          { path: "ejercicio-5", ...lazyRoute(() => import("../pages/Unidad5/E5")) },
-          { path: "ejercicio-6", ...lazyRoute(() => import("../pages/Unidad5/E6")) },
-          { path: "ejercicio-7", ...lazyRoute(() => import("../pages/Unidad5/E7")) },
-          { path: "ejercicio-8", ...lazyRoute(() => import("../pages/Unidad5/E8")) },
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad5/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad5/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad5/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad5/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad5/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad5/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad5/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad5/E8")),
+          },
           ejercicioNoEncontrado,
         ],
       },
@@ -91,17 +205,48 @@ export const router = createHashRouter([
         path: "/cinematica-una-dimension",
         ...lazyRoute(() => import("../pages/Unidad6/Teoria")),
         children: [
-          { path: "ejercicio-1", ...lazyRoute(() => import("../pages/Unidad6/E1")) },
-          { path: "ejercicio-2", ...lazyRoute(() => import("../pages/Unidad6/E2")) },
-          { path: "ejercicio-3", ...lazyRoute(() => import("../pages/Unidad6/E3")) },
-          { path: "ejercicio-4", ...lazyRoute(() => import("../pages/Unidad6/E4")) },
-          { path: "ejercicio-5", ...lazyRoute(() => import("../pages/Unidad6/E5")) },
-          { path: "ejercicio-6", ...lazyRoute(() => import("../pages/Unidad6/E6")) },
-          { path: "ejercicio-7", ...lazyRoute(() => import("../pages/Unidad6/E7")) },
-          { path: "ejercicio-8", ...lazyRoute(() => import("../pages/Unidad6/E8")) },
-          { path: "ejercicio-9", ...lazyRoute(() => import("../pages/Unidad6/E9")) },
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad6/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad6/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad6/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad6/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad6/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad6/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad6/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad6/E8")),
+          },
+          {
+            path: "ejercicio-9",
+            ...lazyRoute(() => import("../pages/Unidad6/E9")),
+          },
           ejercicioNoEncontrado,
         ],
+      },
+      {
+        path: "/2c-2025",
+        ...lazyRoute(() => import("../pages/Anteriores/2c-2025")),
       },
     ],
   },
