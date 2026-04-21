@@ -149,6 +149,59 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">Sabiendo que:</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ x = x_0 + v_0 (t-t_0) + \\frac{1}{2} a (t-t_0)^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Donde $x_0 = H$, $v_0 = 0$, $a = g$, $t=3$ s, $x = 22$ m y $t_0 = 0$,
+          entonces:
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 22 \\text{ m} = H + \\frac{1}{2} (-9,8 \\frac{\\text{m}}{\\text{s}^2}) (3 \\text{s})^2 $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 22 \\text{ m} = H - 44,1 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ H = 66,1 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la rapidez vamos a usar la formula de la velocidad:
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ v = v_0 + a (t-t_0) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ v = a (t) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          No tenemos el valor de $t$ que es el tiempo que tarda la piedra en
+          llegar al suelo, entonces vamos a buscarlo
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 0 \\text{ m} = 66,1 \\text{ m} + \\frac{1}{2} (-9,8 \\frac{\\text{m}}{\\text{s}^2}) (t)^2 $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ t = 3,67 \\text{ s} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando en la ecuación
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ v = a (t) = -9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot 3,67 \\text{ s} = -35,97 \\frac{\\text{m}}{\\text{s}} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "Sacando el modulo nos queda $v = 35,97 \\frac{\\text{m}}{\\text{s}}$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -180,6 +233,41 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Haciendo el equilibrio vertical
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_1 + T_2 = P $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 0,63 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} + T_2 = 0,95 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_2 = 9,31 \\text{ N} - 6,17 \\text{ N} = 3,14 \\text{ N} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">En gramos</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ \\frac{3,14 \\text{ N}}{9,8 \\frac{\\text{m}}{\\text{s}^2}} = 0,32 \\text{ kg} = 320 \\text{ g} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la distancia del centro de masa tenemos que tener en
+          cuenta que el lado izquirdo sostiene un
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\frac{630 \\text{ gr}}{950 \\text{ gr}} = 0,66 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Es decir sostiene un 66% del peso total, entonces el centro de masa se
+          encuentra a un 33% de la distancia total desde el extremo izquierdo,
+          es decir a
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 0,33 \\cdot 110 \\text{ cm} = 37,05 \\text{ cm} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -211,6 +299,31 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          La fuerza $F$ tiene una componente vertical y una componente
+          horizontal
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ F = (F \\cos(\\theta); F \\sin(\\theta)) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\theta = 30° + 90° = 120° $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Podemos buscar el valor de $F$ a través del equilibrio. Tomamos el
+          extremo izquierdo como centro de momentos
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ F \\sin(\\theta) \\cdot 0,7 \\text{ m} = 2,75 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot 2,8 \\text{ m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ F \\sin(\\theta) = 107,8 \\text{ N} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ F = \\frac{107,8 \\text{ N}}{\\sin(120°)} = 124 \\text{ N} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -238,6 +351,55 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Pasemos los datos del ejercicio a metros y segundos:
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 290 \\frac{\\text{km}}{\\text{h}  } \\cdot \\frac{1000 \\text{ m}}{1 \\text{ km}} \\cdot \\frac{1 \\text{ h}}{3600 \\text{ s}} = 80,56 \\frac{\\text{m}}{\\text{s}} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 3 \\text{ km} = 3000 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Usando las fórmulas de cinemática
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ x = x_0 + v_0 (t-t_0) + \\frac{1}{2} a (t-t_0)^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ v = v_0 + a (t-t_0) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">Reemplazando</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 3000 \\text{ m} =  \\frac{1}{2} a (t)^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 80,56 \\text{ m/s} = a (t) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          De la segunda ecuación
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ a = \\frac{80,56 \\text{ m/s}}{t} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando en la primera
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 3000 \\text{ m} =  \\frac{1}{2} \\frac{80,56 \\text{ m/s}}{t} (t)^2 $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ t =  74,5 \\text{ s} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ a = \\frac{80,56 \\text{ m/s}}{74,5 \\text{ s}} = 1,08 \\text{ m/s}^2 $$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -261,6 +423,56 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">Sabiendo que</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T_1 = (T_1 \\cos(\\theta); T_1 \\sin(\\theta)) \\text{ con } \\theta = 30°+ 90°= 120° $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T_2 = (T_2 \\cos(\\alpha); T_2 \\sin(\\alpha)) \\text{ con } \\alpha = 45° $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Equilibrio horizontal
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_1 \\cos(\\theta) = T_2 \\cos(\\alpha) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_1 = T_2 \\frac{\\cos(\\alpha)}{\\cos(\\theta)} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Equilibrio vertical
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_1 \\sin(\\theta) + T_2 \\sin(\\alpha) = mg $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T_2 \\frac{\\cos(\\alpha)}{\\cos(\\theta)} \\sin(\\theta) + T_2 \\sin(\\alpha) = mg $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T_2 (\\frac{\\cos(\\alpha)}{\\cos(\\theta)} \\sin(\\theta) + \\sin(\\alpha)) = mg $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_2 (-0,518) = 882 \\text{ N} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ T_2 = -457 \\text{ N} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando en la ecuación anterior
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T_1 = (-457 \\text{ N}) \\frac{\\cos(\\alpha)}{\\cos(\\theta)} = -646 \\text{ N} $$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -299,6 +511,53 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Como la densidad del cuerpo es menor a la densidad del agua entonces
+          el cuerpo va a flotar y en este punto el empuje es igual al peso
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ E = P \\implies mg = \\rho_{liq} V_{sum} g  $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ V_{sum} = \\frac{m}{\\rho_{liq}} = \\frac{80000 \\text{ gr}}{1,32 \\text{ g/cm}^3} = 60606 \\text{ cm}^3 = 60,6 \\text{ L} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Lo que encontramos es el volumen sumergido, ahora tenemos que saber el
+          volumen total para poder hacer la diferencia
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ mg = \\rho_{c} V_{c} g \\implies V_{c} = \\frac{m}{\\rho_{c}} = \\frac{80000 \\text{ gr}}{1,0 \\text{ g/cm}^3} = 80000 \\text{ cm}^3 = 80,0 \\text{ L} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Ahora la parte que no está sumergida es
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ V_{no\\ sum} = V_{c} - V_{sum} = 80,0 \\text{ L} - 60,6 \\text{ L} = 19,4 \\text{ L} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para saber la diferencia de presión usamos el teorema fundamental de
+          la hidrostática
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ \\Delta P = \\rho g \\Delta h = 1320 \\text{ kg/m}^3 \\cdot 9,8 \\text{ m/s}^2 \\cdot 0,5 \\text{ m} = 6468 \\text{ Pa} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para saber la fuerza de empuje podemos hacer solo masa por aceleración
+          ya que el empuje es igual al peso
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ F = mg = 80 \\text{ kg} \\cdot 9,8 \\text{ m/s}^2 = 784 \\text{ N} $$"
+          }
+        </p>
       </MathJax>
     </DocsLayout>
   );

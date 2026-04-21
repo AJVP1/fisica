@@ -223,7 +223,7 @@
         {
           "to": "/2c-2025",
           "label": "2c-2025",
-          "icon": "lock",
+          "icon": "assignment",
           "toc": [
             {
               "id": "ejercicio-1",
