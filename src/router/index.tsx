@@ -248,6 +248,10 @@ export const router = createHashRouter([
         path: "/2c-2025",
         ...lazyRoute(() => import("../pages/Anteriores/2c-2025")),
       },
+      {
+        path: "/1c-2025",
+        ...lazyRoute(() => import("../pages/Anteriores/1c-2025")),
+      },
     ],
   },
   {
