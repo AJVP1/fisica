@@ -45,6 +45,58 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Primero pasemos la velocidad de kilómetros por hora a metros por
+          segundo:
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 30 \\frac{\\text{km}}{\\text{h}} \\cdot \\frac{1\\text{h}}{60\\text{min}} \\cdot \\frac{1\\text{min}}{60\\text{s}} \\cdot \\frac{1000\\text{m}}{1\\text{km}} = 8.34 \\frac{\\text{m}}{\\text{s}} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Recordando la siguiente ecuación
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ v = v_0 + a (t- t_0) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando, vamos a calcular cuanto tuvo que ser la acelaración para
+          que el ciclista tuviera una velocidad de 0 m/s en un tiempo de 4,3
+          segundos
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 0 \\frac{\\text{m}}{\\text{s}} = 8.34 \\frac{\\text{m}}{\\text{s}} + a (4.30 \\text{s}) $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ a = -1,94 \\frac{\\text{m}}{\\text{s}^2} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular distancia total recorrida, primero calculamos la
+          distancia cuando no iba frenando y después la distancia cuando iba
+          frenando. Para la primera parte
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ x = 8,34 \\frac{\\text{m}}{\\text{s}} \\cdot 1,50 \\text{s} = 12,51 \\text{m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para la segunda parte
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ x = 8,34 \\frac{\\text{m}}{\\text{s}} \\cdot 4,30 \\text{s} + \\frac{1}{2} (-1,94 \\frac{\\text{m}}{\\text{s}^2}) (4,30 \\text{s})^2 = 17,93 \\text{m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          En total fueron
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ x = 12,51 \\text{m} + 17,93 \\text{m} = 30,43 \\text{m} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -74,6 +126,35 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          El vector A tiene coordenadas (5 ; 4) y el vector B tiene coordenadas
+          (-4 ; 1)
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Sea el vector C = (x ; y) entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ A + B + C = (5-4+x; 4+1+y) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para que la suma de los tres vectores resulte nula, entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 5-4+x = 0 \\implies x = -1 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 4+1+y = 0 \\implies y = -5 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">Por lo tanto,</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ C = (-1; -5) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Por último, el módulo del vector C se calcula con la siguiente fórmula
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ |C| = \\sqrt{(-1)^2 + (-5)^2} = \\sqrt{26} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -102,6 +183,41 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Supondremos que la tensión del cable es 500 N donde
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ T = (500 N \\cos(\\theta); 500 N \\sin(\\theta)) \\quad \\text{donde } \\theta = 180° - 30° = 150° $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Escogiendo el extremo izquierdo como centro de momentos, y haciendo
+          equilibrio de momentos
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\sum r = 0 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 4,5 \\frac{\\text{kg}}{\\text{m}} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot 1,5 \\text{ m} + 33 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot d = 500 \\text{ N} \\cdot \\sin(30°) \\cdot 3 \\text{ m}$$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 44,1 \\text{ N} \\cdot 1,5 \\text{m} + 323,4 \\text{ N} \\cdot d = 750 \\text{ N} \\cdot \\text{m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ d = 2,11 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Pero esta es la distancia al extremo izquierdo, por lo tanto, la
+          distancia al extremo derecho es
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 3 \\text{ m} - 2,11 \\text{ m} = 0,89 \\text{ m} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -137,6 +253,36 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          El enunciado nos dice que la presión externa es de un 28% de la
+          presión a nivel del mar, entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ P_{ext} = 0,28 \\cdot 101300 \\text{ Pa} = 28364 \\text{ Pa} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          También nos dice que el área de la puerta es 0,8 metros por 1,9
+          metros, entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ A = 0,8 \\text{ m} \\cdot 1,9 \\text{ m} = 1,52 \\text{ m}^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Por último, tenemos que recordar que un Pascal es igual a un Newton
+          por metro cuadrado, entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ Pa = \\frac{N}{m^2} \\implies N = Pa \\cdot m^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          La fuerza va a ser igual a la diferencia de presión por el área,
+          entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ F = (P_{int} - P_{ext}) \\cdot A = (75000 \\text{ Pa} - 28364 \\text{ Pa}) \\cdot 1,52 \\text{ m}^2 = 70886 \\text{ N} $$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -167,6 +313,49 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Recordando la siguiente ecuación
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ x = x_ 0 + v_0 (t- t_0) + \\frac{1}{2} a (t- t_0)^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">Reemplazando</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 0 = 1,25 \\text{ m} + \\frac{1}{2} a (1,242 \\text{ s})^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ a = -1,62 \\frac{\\text{m}}{\\text{s}^2} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la rápidez con la que llegó la pluma al suelo lunar, se
+          puede usar la siguiente ecuación
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ v = v_0 + a (t- t_0) $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando, tenemos que
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ v = (-1,62 \\frac{\\text{m}}{\\text{s}^2}) (1,242 \\text{ s}) = -2,01 \\frac{\\text{m}}{\\text{s}} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Por último, para calcular la fuerza con la que el astronauta se
+          apoyaba en el suelo lunar, se puede usar la siguiente fórmula
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ F = m \\cdot a $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando, tenemos que
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ F = 129 \\text{ kg} \\cdot 1,62 \\frac{\\text{m}}{\\text{s}^2} = 209 \\text{ N} $$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -190,6 +379,36 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Hacemos el producto punto
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ A \\cdot B = (7,25)(0,00) + (3,50)(-5,45) = -19,1 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular el ángulo entre los vectores, se puede usar la siguiente
+          fórmula
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ A \\cdot B = |A| \\cdot |B| \\cdot \\cos(\\theta) \\implies \\theta = \\arccos\\left(\\frac{A \\cdot B}{|A| \\cdot |B|}\\right) $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Calculando el módulo de cada vector
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ |A| = \\sqrt{(7,25)^2 + (3,50)^2} = 8,05 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ |B| = \\sqrt{(0,00)^2 + (-5,45)^2} = 5,45 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">Reemplazando</p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ \\theta = \\arccos\\left(\\frac{-19,1}{8,05 \\cdot 5,45}\\right) = 116° $$"
+          }
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -221,6 +440,49 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Elijo el extremo derecho como el centro de momentos, entonces,
+          haciendo equilibrio de momentos
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\sum r = 0 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 85 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot d + 25 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot 2 \\text{ m} = 650 \\text{ N} \\cdot 4 \\text{ m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 833 \\text{ Nm} \\cdot d + 490 \\text{ Nm} = 2600 \\text{ Nm} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ d = 2,53 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Pero esta distancia es al extremo derecho, por lo tanto, la distancia
+          al extremo izquierdo es
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ 4 \\text{ m} - 2,53 \\text{ m} = 1,47 \\text{ m} $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la fuerza de vínculo en el punto b, se elije el centro
+          de momentos en el extremo izquierdo, entonces, haciendo equilibrio de
+          momentos
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ \\sum r = 0 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ 25 \\text{ kg} \\cdot 9,8 \\frac{\\text{m}}{\\text{s}^2} \\cdot 2 \\text{ m} = F \\cdot 4 \\text{ m} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ F = 123 \\text{ N} $$"}
+        </p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -261,6 +523,42 @@ const C22025 = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la presión del agua bajo la tapa del barril, se puede
+          usar la siguiente fórmula
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ P = P_{atm} + \\rho g h $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Reemplazando, tenemos que
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ P = 101325 \\text{ Pa} + (1000 \\text{ kg/m}^3)(9.8 \\text{ m/s}^2)(9.5 \\text{ m}) = 194325 \\text{ Pa} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          Para calcular la fuerza neta que hizo saltar la tapa, se puede usar la
+          siguiente fórmula
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {"$$ N = Pa \\cdot \\text{m}^2 $$"}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          La fuerza aplicada será igual a la diferencia de presión por el área,
+          entonces
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ \\Delta P = 194325 \\text{ Pa} - 101300 \\text{ Pa} = 93025 \\text{ Pa} $$"
+          }
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "$$ N = 93025 \\text{ Pa} \\cdot 0,450 \\text{ m}^2 = 41861 \\text{ N} $$"
+          }
+        </p>
       </MathJax>
     </DocsLayout>
   );
