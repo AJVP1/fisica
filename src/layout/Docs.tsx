@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import Footer from "../components/Footer";
@@ -9,12 +9,14 @@ type DocsLayoutProps = {
 };
 
 export const DocsLayout = ({ toc, children }: DocsLayoutProps) => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header onMenuClick={() => setSidebarOpen(true)} />
 
       <div className="mx-auto flex max-w-360">
-        <Sidebar />
+        <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
         {/* Contenido principal */}
         <main className="flex-1 min-w-0">
