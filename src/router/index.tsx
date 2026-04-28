@@ -247,6 +247,37 @@ export const router = createHashRouter([
       {
         path: "/cinematica-dos-dimensiones",
         ...lazyRoute(() => import("../pages/Unidad7/Teoria")),
+        children: [
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad7/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad7/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad7/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad7/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad7/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad7/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad7/E7")),
+          },
+          ejercicioNoEncontrado,
+        ],
       },
       {
         path: "/2c-2025",

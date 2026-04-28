@@ -191,7 +191,7 @@
         {
           "to": "/cinematica-dos-dimensiones",
           "label": "Cinemática en dos dimensiones",
-          "icon": "speed",
+          "icon": "arrow_outward",
           "toc": [
             {
               "id": "tiro-oblicuo",

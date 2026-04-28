@@ -109,7 +109,7 @@ const Unidad7 = () => {
           {ejercicios.map((numero) => (
             <Link
               key={numero}
-              to={`/cinematica-una-dimension/ejercicio-${numero}`}
+              to={`/cinematica-dos-dimensiones/ejercicio-${numero}`}
               className="bg-[#1d2554] text-white px-3 py-2 text-sm sm:text-base rounded hover:bg-[#374785] transition-colors"
             >
               {`Ejercicio ${numero}`}
