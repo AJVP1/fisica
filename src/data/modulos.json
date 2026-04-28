@@ -189,29 +189,25 @@
       "title": "Segundo parcial",
       "items": [
         {
-          "to": "/seguridad",
-          "label": "Seguridad",
-          "icon": "lock",
+          "to": "/cinematica-dos-dimensiones",
+          "label": "Cinemática en dos dimensiones",
+          "icon": "speed",
           "toc": [
             {
-              "id": "spring-security",
-              "title": "Spring Security"
+              "id": "tiro-oblicuo",
+              "title": "Tiro oblicuo"
             },
             {
-              "id": "autenticacion",
-              "title": "Autenticación"
+              "id": "tiro-circular",
+              "title": "Tiro circular"
             },
             {
-              "id": "autorizacion",
-              "title": "Autorización"
+              "id": "movimiento-relativo",
+              "title": "Movimiento relativo"
             },
             {
-              "id": "jwt",
-              "title": "JWT"
-            },
-            {
-              "id": "roles-permisos",
-              "title": "Roles y permisos"
+              "id": "practica",
+              "title": "Práctica"
             }
           ]
         }

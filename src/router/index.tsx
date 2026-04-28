@@ -245,6 +245,10 @@ export const router = createHashRouter([
         ],
       },
       {
+        path: "/cinematica-dos-dimensiones",
+        ...lazyRoute(() => import("../pages/Unidad7/Teoria")),
+      },
+      {
         path: "/2c-2025",
         ...lazyRoute(() => import("../pages/Anteriores/2c-2025")),
       },
@@ -254,6 +258,7 @@ export const router = createHashRouter([
       },
     ],
   },
+
   {
     path: "/login",
     element: <LoginPage />,
