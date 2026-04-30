@@ -1,4 +1,4 @@
-import { createHashRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import { type ComponentType } from "react";
 import { AuthRoute } from "../auth/Auth.tsx";
 import LoginPage from "../auth/LoginPage.tsx";
@@ -18,7 +18,7 @@ const ejercicioNoEncontrado = {
   ),
 };
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
   {
     element: (
       <AuthRoute>
