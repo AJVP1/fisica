@@ -280,6 +280,45 @@ export const router = createBrowserRouter([
         ],
       },
       {
+        path: "/dinamica-primera-parte",
+        ...lazyRoute(() => import("../pages/Unidad8/Teoria")),
+        children: [
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad8/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad8/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad8/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad8/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad8/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad8/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad8/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad8/E8")),
+          },
+          ejercicioNoEncontrado,
+        ],
+      },
+      {
         path: "/2c-2025",
         ...lazyRoute(() => import("../pages/Anteriores/2c-2025")),
       },

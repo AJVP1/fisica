@@ -210,6 +210,29 @@
               "title": "Práctica"
             }
           ]
+        },
+        {
+          "to": "/dinamica-primera-parte",
+          "label": "Dinámica primera parte",
+          "icon": "arrow_outward",
+          "toc": [
+            {
+              "id": "tiro-oblicuo",
+              "title": "Tiro oblicuo"
+            },
+            {
+              "id": "tiro-circular",
+              "title": "Tiro circular"
+            },
+            {
+              "id": "movimiento-relativo",
+              "title": "Movimiento relativo"
+            },
+            {
+              "id": "practica",
+              "title": "Práctica"
+            }
+          ]
         }
       ]
     },
