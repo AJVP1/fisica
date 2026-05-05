@@ -28,6 +28,16 @@ function Ejercicio8() {
       </ol>
 
       <h3>Solución</h3>
+      <p>
+        Para el primer punto, el sistema A iría con mayor aceleración dado que
+        no tiene en cuenta la tensión en la cuerda, como si ocurre en el sistema
+        B.
+      </p>
+      <p>
+        Para el segundo punto, ambos sistema irían en la misma aceleración dado
+        que la fuerza empuje es la misma al peso del cuerpo 2.
+      </p>
+      <p>Para el tercer punto, </p>
     </ExerciseLayout>
   );
 }

@@ -25,6 +25,24 @@ function Ejercicio5() {
       />
 
       <h3>Solución</h3>
+      <p>
+        Este problema es parecido que al caso de empuje horizontal, la
+        diferencia es que ahora está presente la fuerza peso, entonces para el
+        primer bloque:
+      </p>
+      <p>{"$$ F - T - P = m \\cdot a $$"}</p>
+      <p>{"$$ 200 - T - 6 \\cdot 9,8 = 6 \\cdot a $$"}</p>
+      <p>Para el segundo bloque:</p>
+      <p>{"$$ T - P = m \\cdot a $$"}</p>
+      <p>{"$$ T - 5 \\cdot 9,8 = 5 \\cdot a $$"}</p>
+      <p>{"$$ T = 5 \\cdot a + 49 $$"}</p>
+      <p>Reemplazando en la primera ecuación:</p>
+      <p>{"$$ 200 - (5 \\cdot a + 49) - 58,8 = 6 \\cdot a $$"}</p>
+      <p>{"$$ 200 - 5 \\cdot a - 49 - 58,8 = 6 \\cdot a $$"}</p>
+      <p>{"$$ 92,2 = 11 \\cdot a $$"}</p>
+      <p>{"$$ a = 8,38 \\text{ m/s}^2 $$"}</p>
+      <p>La tensión en la cuerda es:</p>
+      <p>{"$$ T = 5 \\cdot 8,38 + 49 = 90,9 \\text{ N} $$"}</p>
     </ExerciseLayout>
   );
 }

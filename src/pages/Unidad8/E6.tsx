@@ -25,6 +25,26 @@ function Ejercicio6() {
       />
 
       <h3>Solución</h3>
+      <p>
+        La correcta es la 4, ya que en la posición A no se sigue aplicando
+        fuerza, por lo tanto, se alcanza la máxima aceleración.
+      </p>
+      <p>
+        La primera opción es falsa, ya que se sigue aplicando fuerza lo que hace
+        que la aceleración sea positiva y aumente la velocidad.
+      </p>
+      <p>
+        La segunda opción es falsa, ya que la aceleración no es constante desde
+        0 hasta B.
+      </p>
+      <p>
+        La tercera opción es falsa, ya que la velocidad no disminuye entre A y
+        B.
+      </p>
+      <p>
+        La quinta opción es falsa, ya que el móvil no cambia el sentido de
+        movimiento en A.
+      </p>
     </ExerciseLayout>
   );
 }

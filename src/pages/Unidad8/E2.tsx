@@ -20,6 +20,18 @@ function Ejercicio2() {
       </ol>
 
       <h3>Solución</h3>
+      <p>Recordando:</p>
+      <p>$$ \sum F = m \cdot a $$</p>
+      <p>$$ 600 = m \cdot 1,50 $$</p>
+      <p>{"$$ m = \\frac{600}{1,50} = 400 \\text{ kg} $$"}</p>
+      <p>Si descarga la dos tercios de la parte de la mercadería:</p>
+      <p>
+        $$ 600 = 400 \frac{2}
+        {3} \cdot a $$
+      </p>
+      <p>
+        {"$$ a = \\frac{600}{400 \\cdot \\frac{2}{3}} = 2,25 \\text{ m/s}^2 $$"}
+      </p>
     </ExerciseLayout>
   );
 }

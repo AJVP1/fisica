@@ -28,6 +28,40 @@ function Ejercicio4() {
       />
 
       <h3>Solución</h3>
+      <p>Recordando:</p>
+      <p>$$ \sum F = m \cdot a $$</p>
+      <p>
+        Para la caja de 80 kg, como las fuerzas son de empuje y no de tiro (son
+        hacia el objeto y no desde el objeto), entonces la fuerza reacción va en
+        sentido contrario, es decir, $F_2$ es negativa para esta caja:
+      </p>
+      <p>{"$$ F_1 - F_2 = m \\cdot a $$"}</p>
+      <p>Como nos dicen que $ F_1 = 300 $:</p>
+      <p>{"$$ 300 - F_2 = 80 \\cdot a $$"}</p>
+      <p>Para la caja de 120 kg:</p>
+      <p>{"$$ F_2 = 120 \\cdot a $$"}</p>
+      <p>Reemplazando</p>
+      <p>{"$$ 300 - 120 \\cdot a = 80 \\cdot a $$"}</p>
+      <p>{"$$ 300 = 200 \\cdot a $$"}</p>
+      <p>{"$$ a = 1,5 \\text{ m/s}^2 $$"}</p>
+      <p>
+        Reemplazando el valor de la aceleración en la ecuación de la caja de 120
+        kg:
+      </p>
+      <p>{"$$ F_2 = 120 \\cdot 1,5 = 180 \\text{ N} $$"}</p>
+      <p>
+        Para el segundo item, la fuerza horizontal de 300 N se aplica de derecha
+        a izquierda sobre el carretón B, para la caja de 120 kg:
+      </p>
+      <p>{"$$ - F_1 +  F_2 = m \\cdot a $$"}</p>
+      <p>{"$$ -300 + F_2 = 120 \\cdot a $$"}</p>
+      <p>Para la caja de 80 kg:</p>
+      <p>{"$$ -F_2 = 80 \\cdot a $$"}</p>
+      <p>Reemplazando</p>
+      <p>{"$$ -300 - 80 \\cdot a = 120 \\cdot a $$"}</p>
+      <p>{"$$ a = 1,5 \\text{ m/s}^2 $$"}</p>
+      <p>La fuerza aplicada es de:</p>
+      <p>{"$$ F_2 = 80 \\cdot 1,5 = 120 \\text{ N} $$"}</p>
     </ExerciseLayout>
   );
 }
