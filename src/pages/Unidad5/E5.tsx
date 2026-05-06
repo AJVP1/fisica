@@ -5,7 +5,7 @@ function Ejercicio5() {
     <ExerciseLayout number={5}>
       <h3>Enunciado</h3>
       <p>
-        Un tubo en forma de Uabierto por ambos extremos contiene un poco de
+        Un tubo en forma de U abierto por ambos extremos contiene un poco de
         mercurio. Se vierte un poco de agua en el brazo izquierdo del tubo hasta
         que la altura de la columna de agua es 15,0 cm.
       </p>

@@ -32,7 +32,7 @@ function Ejercicio8() {
       <p>{"$$ F_2 = 36 F_1 $$"}</p>
 
       <p>Ahora tomando centro de momentos en el émbolo (2):</p>
-      <p>{"$$ F_1 \\cdot 0,25 = F3 \\cdot 1,50 $$"}</p>
+      <p>{"$$ F_1 \\cdot 0,05 = F3 \\cdot 0,30 $$"}</p>
       <p>{"$$ F_1 = 6 F_3 $$"}</p>
 
       <p>

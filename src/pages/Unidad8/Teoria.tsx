@@ -35,7 +35,7 @@ const Unidad8 = () => {
         <hr />
 
         <h3
-          id="tiro-oblicuo"
+          id="leyes-de-newton"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Las leyes de Newton
