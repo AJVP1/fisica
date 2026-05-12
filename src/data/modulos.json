@@ -221,6 +221,21 @@
               "title": "Leyes de Newton"
             }
           ]
+        },
+        {
+          "to": "/dinamica-segunda-parte",
+          "label": "Dinámica segunda parte",
+          "icon": "arrow_split",
+          "toc": [
+            {
+              "id": "fuerza-de-rozamiento",
+              "title": "Fuerza de rozamiento estática, Fuerza de roamiento estática maxima y Fuerza de rozamiento dinámica"
+            },
+            {
+              "id": "fuerza-elastica",
+              "title": "Fuerza Elástica"
+            }
+          ]
         }
       ]
     },
