@@ -23,6 +23,24 @@ function Ejercicio7() {
       </ol>
 
       <h3>Solución</h3>
+      <p>
+        Para el coeficiente estático, la fuerza aplicada es igual a la fuerza de
+        fricción estática máxima:
+      </p>
+      <p>{"$$ \\mu_s = \\frac{F_{\\text{estática máxima}}}{N} $$"}</p>
+      <p>
+        Donde $N$ es la fuerza normal, que en este caso es igual al peso de la
+        caja:
+      </p>
+      <p>{"$$ N = m \\cdot g = 45,0 \\cdot 9,8 = 441 \\text{ N} $$"}</p>
+      <p>Entonces:</p>
+      <p>{"$$ \\mu_s = \\frac{313}{441} = 0,709 $$"}</p>
+      <p>
+        Para el coeficiente cinético, la fuerza aplicada es igual a la fuerza de
+        fricción cinética:
+      </p>
+      <p>{"$$ \\mu_k = \\frac{F_{\\text{cinética}}}{N} $$"}</p>
+      <p>{"$$ \\mu_k = \\frac{208}{441} = 0,472 $$"}</p>
     </ExerciseLayout>
   );
 }

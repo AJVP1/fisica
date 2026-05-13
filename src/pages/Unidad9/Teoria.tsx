@@ -10,7 +10,7 @@ const Unidad8 = () => {
 
   return (
     <DocsLayout
-      toc={<TableOfContents items={modulosData.sidebar[2].items[0].toc} />}
+      toc={<TableOfContents items={modulosData.sidebar[2].items[2].toc} />}
     >
       <MathJax>
         <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
@@ -46,7 +46,7 @@ const Unidad8 = () => {
           producto del coeficiente de rozamiento estático y la fuerza normal.
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$ F_{s} = \\mu_{e} \\cdot N $`}
+          {`$$ F_{s} = \\mu_{e} \\cdot N $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           La fuerza de roamiento estática máxima es la fuerza máxima que puede
@@ -69,7 +69,7 @@ const Unidad8 = () => {
           la fuerza es proporcional a la deformación del objeto.
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$ F_{e} = k \\cdot |l - l_0| $`}
+          {`$$ F_{e} = k \\cdot |l - l_0| $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           Donde $k$ es la constante elástica del objeto, $l$ es la longitud

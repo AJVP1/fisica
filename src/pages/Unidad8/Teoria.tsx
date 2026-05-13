@@ -10,7 +10,7 @@ const Unidad8 = () => {
 
   return (
     <DocsLayout
-      toc={<TableOfContents items={modulosData.sidebar[2].items[0].toc} />}
+      toc={<TableOfContents items={modulosData.sidebar[2].items[1].toc} />}
     >
       <MathJax>
         <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
@@ -56,7 +56,7 @@ const Unidad8 = () => {
           los cuerpos tendrán aceleración.
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$ \\sum \\vec{F} = m \\cdot a $$`}
+          {"$$ \\sum \\vec{F} = m \\cdot a $$"}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           En otros casos, podemos tener tensiones en cuerdas que conectan los
@@ -65,7 +65,7 @@ const Unidad8 = () => {
           Teniendo el siguiente sistema
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$  T - m \\cdot g = m \\cdot a $$`}
+          {"$$  T - m \\cdot g = m \\cdot a $$"}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           En muchos casos, la tensión que une a los cuerpos es la misma, por lo
