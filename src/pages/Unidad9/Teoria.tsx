@@ -5,7 +5,7 @@ import { DocsLayout } from "../../layout/Docs.tsx";
 import { TableOfContents } from "../../components/TableOfContents.tsx";
 import modulosData from "../../data/modulos.json";
 
-const Unidad8 = () => {
+const Unidad9 = () => {
   const ejercicios = Array.from({ length: 7 }, (_, i) => i + 1);
 
   return (
@@ -108,4 +108,4 @@ const Unidad8 = () => {
   );
 };
 
-export default Unidad8;
+export default Unidad9;

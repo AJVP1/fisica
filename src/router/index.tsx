@@ -319,6 +319,45 @@ export const router = createHashRouter([
         ],
       },
       {
+        path: "/trabajo-y-energia",
+        ...lazyRoute(() => import("../pages/Unidad10/Teoria")),
+        children: [
+          {
+            path: "ejercicio-1",
+            ...lazyRoute(() => import("../pages/Unidad10/E1")),
+          },
+          {
+            path: "ejercicio-2",
+            ...lazyRoute(() => import("../pages/Unidad10/E2")),
+          },
+          {
+            path: "ejercicio-3",
+            ...lazyRoute(() => import("../pages/Unidad10/E3")),
+          },
+          {
+            path: "ejercicio-4",
+            ...lazyRoute(() => import("../pages/Unidad10/E4")),
+          },
+          {
+            path: "ejercicio-5",
+            ...lazyRoute(() => import("../pages/Unidad10/E5")),
+          },
+          {
+            path: "ejercicio-6",
+            ...lazyRoute(() => import("../pages/Unidad10/E6")),
+          },
+          {
+            path: "ejercicio-7",
+            ...lazyRoute(() => import("../pages/Unidad10/E7")),
+          },
+          {
+            path: "ejercicio-8",
+            ...lazyRoute(() => import("../pages/Unidad10/E8")),
+          },
+          ejercicioNoEncontrado,
+        ],
+      },
+      {
         path: "/dinamica-segunda-parte",
         ...lazyRoute(() => import("../pages/Unidad9/Teoria")),
         children: [
