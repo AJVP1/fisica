@@ -46,15 +46,18 @@ const Unidad9 = () => {
           producto del coeficiente de rozamiento estático y la fuerza normal.
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$ F_{s} = \\mu_{e} \\cdot N $$`}
+          {`$$ F_{r} = \\mu_{e} \\cdot N $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          La fuerza de roamiento estática máxima es la fuerza máxima que puede
+          La fuerza de rozamiento estática máxima es la fuerza máxima que puede
           ejercer el rozamiento estático antes de que el objeto comience a
           moverse. La fuerza de rozamiento dinámica, por otro lado, es la fuerza
           que se opone al movimiento una vez que el objeto ya está en
           movimiento, y se calcula como el producto del coeficiente de
           rozamiento dinámico y la fuerza normal.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$ F_{r} = \\mu_{d} \\cdot N $$`}
         </p>
 
         <h3

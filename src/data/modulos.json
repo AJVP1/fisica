@@ -240,7 +240,7 @@
         {
           "to": "/trabajo-y-energia",
           "label": "Trabajo y energía",
-          "icon": "arrow_split",
+          "icon": "bolt",
           "toc": [
             {
               "id": "trabajo",
@@ -265,6 +265,14 @@
             {
               "id": "trabajo-fuerzas-conservativas",
               "title": "Trabajo de Fuerzas Conservativas"
+            },
+            {
+              "id": "trabajo-fuerzas-no-conservativas",
+              "title": "Trabajo de Fuerzas No Conservativas"
+            },
+            {
+              "id": "practica",
+              "title": "Práctica"
             }
           ]
         }

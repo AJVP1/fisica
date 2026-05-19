@@ -10,7 +10,7 @@ const Unidad10 = () => {
 
   return (
     <DocsLayout
-      toc={<TableOfContents items={modulosData.sidebar[2].items[2].toc} />}
+      toc={<TableOfContents items={modulosData.sidebar[2].items[3].toc} />}
     >
       <MathJax>
         <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
@@ -68,7 +68,7 @@ const Unidad10 = () => {
           y se calcula como:
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$ E_k = \\frac{1}{2} \\cdot m \\cdot v^2 $$`}
+          {`$$ E_c = \\frac{1}{2} \\cdot m \\cdot v^2 $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           Donde $m$ es la masa del objeto y $v$ es su velocidad.
@@ -85,7 +85,7 @@ const Unidad10 = () => {
           de un objeto en un campo gravitatorio y se calcula como:
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$ E_p = m \\cdot g \\cdot h $$`}
+          {`$$ E_{pg} = m \\cdot g \\cdot h $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
           Donde $m$ es la masa del objeto, $g$ es la aceleración debida a la
@@ -122,11 +122,13 @@ const Unidad10 = () => {
           potencial de un objeto.
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          La energía mecánica se converva en sistemas donde solo actúan fuerzas
-          conservativas, lo que significa que la energía total del sistema
-          permanece constante a lo largo del tiempo. Esto implica que cualquier
-          cambio en la energía cinética de un objeto se compensa con un cambio
-          correspondiente en su energía potencial, y viceversa.
+          Si solo actúan fuerzas conservativas, la energía mecánica total del
+          sistema permanece constante a lo largo del tiempo. Esto implica que
+          cualquier cambio en la energía cinética de un objeto se compensa con
+          un cambio correspondiente en su energía potencial, y viceversa.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$ E_{m} = E_c + Ep = E_c + E_{pg} + E_{pe} $$`}
         </p>
 
         <h3
@@ -143,11 +145,35 @@ const Unidad10 = () => {
           conservativas. Se puede expresar matemáticamente como:
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          {`$$ W = -\\Delta E_p $$`}
+          {`$$ W_c = - (E_{p_f} - E_{p_i}) $$`}
         </p>
         <p className="text-base leading-7 text-[#141414] my-2">
-          Donde $W$ es el trabajo realizado por la fuerza conservativa y $\Delta
-          E_p$ es el cambio en la energía potencial del objeto.
+          {
+            "Donde $W_c$ es el trabajo realizado por la fuerza conservativa y $E_{p_f} - E_{p_i}$ es el cambio en la energía potencial del objeto."
+          }
+        </p>
+
+        <h3
+          id="trabajo-fuerzas-no-conservativas"
+          className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
+        >
+          Trabajo de fuerzas no conservativas
+        </h3>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          El trabajo realizado por fuerzas no conservativas, como la fricción,
+          depende del camino seguido y no se puede recuperar completamente.
+          Estas fuerzas disipan energía mecánica, convirtiéndola en otras formas
+          de energía, como el calor. En presencia de fuerzas no conservativas,
+          la energía mecánica total del sistema no se conserva, y el trabajo
+          realizado por estas fuerzas se resta de la energía mecánica total.
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {`$$ W_{nc} = (E_{m_f} - E_{m_i}) $$`}
+        </p>
+        <p className="text-base leading-7 text-[#141414] my-2">
+          {
+            "Donde $W_{nc}$ es el trabajo realizado por la fuerza no conservativa y $E_{m_f} - E_{m_i}$ es el cambio en la energía mecánica del objeto."
+          }
         </p>
 
         <h2
