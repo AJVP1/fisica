@@ -236,6 +236,37 @@
               "title": "Fuerza Elástica"
             }
           ]
+        },
+        {
+          "to": "/trabajo-y-energia",
+          "label": "Trabajo y energía",
+          "icon": "arrow_split",
+          "toc": [
+            {
+              "id": "trabajo",
+              "title": "Trabajo"
+            },
+            {
+              "id": "energia-cinetica",
+              "title": "Energía Cinética"
+            },
+            {
+              "id": "energia-potencial-gravitatoria",
+              "title": "Energía Potencial Gravitatoria"
+            },
+            {
+              "id": "energia-potencial-elastica",
+              "title": "Energía Potencial Elástica"
+            },
+            {
+              "id": "energia-mecanica",
+              "title": "Energía Mecánica"
+            },
+            {
+              "id": "trabajo-fuerzas-conservativas",
+              "title": "Trabajo de Fuerzas Conservativas"
+            }
+          ]
         }
       ]
     },

@@ -35,7 +35,7 @@ const Unidad10 = () => {
         <hr />
 
         <h3
-          id="fuerza-de-rozamiento"
+          id="trabajo"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Trabajo
@@ -58,7 +58,7 @@ const Unidad10 = () => {
         </p>
 
         <h3
-          id="fuerza-elastica"
+          id="energia-cinetica"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Energía cinética
@@ -75,7 +75,7 @@ const Unidad10 = () => {
         </p>
 
         <h3
-          id="fuerza-elastica"
+          id="energia-potencial-gravitatoria"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Energía potencial gravitatoria
@@ -94,7 +94,7 @@ const Unidad10 = () => {
         </p>
 
         <h3
-          id="fuerza-elastica"
+          id="energia-potencial-elastica"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Energía potencial elástica
@@ -112,7 +112,7 @@ const Unidad10 = () => {
         </p>
 
         <h3
-          id="fuerza-elastica"
+          id="energia-mecanica"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Energía mecánica
@@ -130,7 +130,7 @@ const Unidad10 = () => {
         </p>
 
         <h3
-          id="fuerza-elastica"
+          id="trabajo-fuerzas-conservativas"
           className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20"
         >
           Trabajo de fuerzas conservativas
