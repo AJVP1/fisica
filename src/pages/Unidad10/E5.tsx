@@ -26,6 +26,19 @@ function Ejercicio5() {
       />
 
       <h3>Solución</h3>
+      <p>
+        En este caso hay que calcular el área bajo la curva para calcular el
+        trabajo, para el primer punto:
+      </p>
+      <p>{`$$ W = \\frac{2 \\cdot 2}{2} + 2 N \\cdot 1m = 4 \\, \\text{J} $$`}</p>
+      <p>Para el segundo punto:</p>
+      <p>{`$$ W = 0 N \\cdot 1m = 0 \\, \\text{J} $$`}</p>
+      <p>Para el tercer punto:</p>
+      <p>{`$$ W = \\frac{-1 \\cdot 2}{2} = -1 \\, \\text{J} $$`}</p>
+      <p>Para el cuarto punto:</p>
+      <p>{`$$ W = 4 - 1 = 3 \\, \\text{J} $$`}</p>
+      <p>Para el quinto punto:</p>
+      <p>{`$$ W = \\frac{-1 \\cdot 5}{2} = -2.5 \\, \\text{J} $$`}</p>
     </ExerciseLayout>
   );
 }

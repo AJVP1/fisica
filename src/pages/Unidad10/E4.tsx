@@ -23,6 +23,25 @@ function Ejercicio4() {
       </ol>
 
       <h3>Solución</h3>
+      <p>
+        Como no hay fuerzas conservativas, el trabajo neto es igual al cambio en
+        la energía cinética:
+      </p>
+      <p>{`$$ W_{net} = \\Delta KE = \\frac{1}{2} m (v_f^2 - v_i^2) $$`}</p>
+      <p>Reemplazando los valores:</p>
+      <p>{`$$ 10.0 \\cdot 3.00 = \\frac{1}{2} \\cdot 7.00 (v_f^2 - 4.00^2) $$`}</p>
+      <p>{`$$ 30.0 = 3.50 (v_f^2 - 16.0) $$`}</p>
+      <p>{`$$ v_f^2 = 24.86 $$`}</p>
+      <p>{`$$ v_f = 4.96 \\, \\text{m/s} $$`}</p>
+      <p>Para el inciso b), la aceleración es:</p>
+      <p>{"$$ \\sum F = m \\cdot a $$"}</p>
+      <p>{"$$  F = m \\cdot a $$"}</p>
+      <p>{`$$ a = \\frac{F}{m} = \\frac{10.0}{7.00} = 1.43 \\, \\text{m/s}^2 $$`}</p>
+      <p>Ahora que tenemos la aceleración, podemos encontrar el tiempo:</p>
+      <p>{`$$ t = \\frac{v_f - v_i}{a} = \\frac{4.96 - 4.00}{1.43} = 0.67 \\, \\text{s} $$`}</p>
+      <p>Y la rapidez final es:</p>
+      <p>{`$$ v_f = v_i + a \\cdot t $$`}</p>
+      <p>{`$$ v_f = 4.00 + 1.43 \\cdot 0.67 = 4.96 \\, \\text{m/s} $$`}</p>
     </ExerciseLayout>
   );
 }

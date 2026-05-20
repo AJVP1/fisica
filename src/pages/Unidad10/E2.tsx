@@ -30,6 +30,29 @@ function Ejercicio2() {
       />
 
       <h3>Solución</h3>
+      <p>
+        El tema con este ejercicio es que nos dice que los bloques se están
+        desplazando a rapidez constante, lo que implica que la aceleración es
+        cero. Esto quiere decir que si aplicamos la segunda ley de Newton:
+      </p>
+      <p>{`$$ \\sum F = m \\cdot a $$`}</p>
+      <p>Como la aceleración es cero:</p>
+      <p>{`$$ \\sum F = 0 $$`}</p>
+      <p>Aplicando esto al bloque B</p>
+      <p>{"$$ P - T = 0 \\rightarrow T = P $$"}</p>
+      <p>Calculando el trabajo realizado por cada fuerza:</p>
+      <p>{`$$ W_{P} = P \\cdot d = 12.0 \\cdot 0.75 = 9.0 \\, \\text{J} $$`}</p>
+      <p>{`$$ W_{T} = T \\cdot d = 12.0 \\cdot 0.75 = -9.0 \\, \\text{J} $$`}</p>
+      <p>
+        Aplicando esto al bloque A, podemos ver que las fuerzas que actúan son
+        la tensión de la cuerda y la fuerza de fricción y como el sistema no
+        está acelerado entonces estas fuerzas serán iguales y opuestas:
+      </p>
+      <p>{`$$ W_{T} = T \\cdot d = 20.0 \\cdot 0.75 = -15.0 \\, \\text{J} $$`}</p>
+      <p>{`$$ W_{f} = f \\cdot d = 20.0 \\cdot 0.75 = 15.0 \\, \\text{J} $$`}</p>
+      <p>Por último, el trabajo total efectuado sobre cada bloque es:</p>
+      <p>{`$$ W_{B} = W_{P} + W_{T} = 9.0 - 9.0 = 0 \\, \\text{J} $$`}</p>
+      <p>{`$$ W_{A} = W_{T} + W_{f} = -15.0 + 15.0 = 0 \\, \\text{J} $$`}</p>
     </ExerciseLayout>
   );
 }
