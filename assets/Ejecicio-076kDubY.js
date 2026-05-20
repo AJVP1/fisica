@@ -1,0 +1,1 @@
+import{j as t}from"./index-DbFso5n8.js";import{M as a}from"./MathJax-CSHpqj2J.js";function c({number:e,children:s}){return t.jsx(a,{children:t.jsxs("section",{className:"bg-[#fafafa] mx-auto p-6",children:[t.jsx("h2",{className:"text-4xl text-center text-[#1d2554] mt-6",children:`Ejercicio ${e}`}),s]})})}export{c as E};
