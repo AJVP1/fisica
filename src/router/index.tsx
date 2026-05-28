@@ -354,6 +354,42 @@ export const router = createHashRouter([
             path: "ejercicio-8",
             ...lazyRoute(() => import("../pages/Unidad10/E8")),
           },
+          {
+            path: "ejercicio-9",
+            ...lazyRoute(() => import("../pages/Unidad10/E9")),
+          },
+          {
+            path: "ejercicio-10",
+            ...lazyRoute(() => import("../pages/Unidad10/E10")),
+          },
+          {
+            path: "ejercicio-11",
+            ...lazyRoute(() => import("../pages/Unidad10/E11")),
+          },
+          {
+            path: "ejercicio-12",
+            ...lazyRoute(() => import("../pages/Unidad10/E12")),
+          },
+          {
+            path: "ejercicio-13",
+            ...lazyRoute(() => import("../pages/Unidad10/E13")),
+          },
+          {
+            path: "ejercicio-14",
+            ...lazyRoute(() => import("../pages/Unidad10/E14")),
+          },
+          {
+            path: "ejercicio-15",
+            ...lazyRoute(() => import("../pages/Unidad10/E15")),
+          },
+          {
+            path: "ejercicio-16",
+            ...lazyRoute(() => import("../pages/Unidad10/E16")),
+          },
+          {
+            path: "ejercicio-17",
+            ...lazyRoute(() => import("../pages/Unidad10/E17")),
+          },
           ejercicioNoEncontrado,
         ],
       },
