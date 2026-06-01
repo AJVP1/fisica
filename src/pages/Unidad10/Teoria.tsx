@@ -6,7 +6,7 @@ import { TableOfContents } from "../../components/TableOfContents.tsx";
 import modulosData from "../../data/modulos.json";
 
 const Unidad10 = () => {
-  const ejercicios = Array.from({ length: 8 }, (_, i) => i + 1);
+  const ejercicios = Array.from({ length: 17 }, (_, i) => i + 1);
 
   return (
     <DocsLayout

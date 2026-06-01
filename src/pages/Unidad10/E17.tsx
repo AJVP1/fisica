@@ -23,6 +23,23 @@ function Ejercicio17() {
       />
 
       <h3>Solución</h3>
+      <p>
+        Como no hay rozamiento, la energía se conserva, por lo que podemos
+        calculcar la velcidad con la que llega al suelo y esta será la misma que
+        toca al resorte:
+      </p>
+      <p>{`E_p = m \\cdot g \\cdot h`}</p>
+      <p>{`E_p = 1.80 \\,\\text{kg} \\cdot 9.8 \\,\\text{m/s}^2 \\cdot 0.65 \\,\\text{m} = 11.4 \\,\\text{J}`}</p>
+      <p>{`E_k = \\frac{1}{2} m v^2`}</p>
+      <p>{`11.4 \\,\\text{J} = \\frac{1}{2} \\cdot 1.80 \\,\\text{kg} \\cdot v^2`}</p>
+      <p>{`v = \\sqrt{\\frac{2 \\cdot 11.4 \\,\\text{J}}{1.80 \\,\\text{kg}}} = 3.57 \\,\\text{m/s}`}</p>
+      <p>
+        Para calcular la constante de fuerza K del resorte, usamos la
+        conservación de la energía:
+      </p>
+      <p>{`E_k = \\frac{1}{2} K x^2`}</p>
+      <p>{`11.4 \\,\\text{J} = \\frac{1}{2} K (0.09 \\,\\text{m})^2`}</p>
+      <p>{`K = \\frac{2 \\cdot 11.4 \\,\\text{J}}{(0.09 \\,\\text{m})^2} = 2831 \\,\\text{N/m}`}</p>
     </ExerciseLayout>
   );
 }
