@@ -15,7 +15,7 @@ const C22025 = () => {
     >
       <MathJax>
         <h1 className="text-4xl font-extrabold tracking-tight text-(--color-primary) mb-4">
-          Ejercicios del segundo parcial de 2025
+          Ejercicios del primer parcial de 2025 - 1er cuatrimestre
         </h1>
 
         <h2

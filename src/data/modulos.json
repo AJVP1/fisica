@@ -282,8 +282,8 @@
       "title": "Parciales anteriores",
       "items": [
         {
-          "to": "/2c-2025",
-          "label": "2c-2025",
+          "to": "/1c-2025-1P",
+          "label": "1c-2025-1P",
           "icon": "assignment",
           "toc": [
             {
@@ -317,8 +317,8 @@
           ]
         },
         {
-          "to": "/1c-2025",
-          "label": "1c-2025",
+          "to": "/2c-2025-1P",
+          "label": "2c-2025-1P",
           "icon": "assignment",
           "toc": [
             {
@@ -352,6 +352,40 @@
             {
               "id": "ejercicio-8",
               "title": "Ejercicio 8"
+            }
+          ]
+        },
+        {
+          "to": "/1c-2025-2P",
+          "label": "1c-2025-2P",
+          "icon": "assignment",
+          "toc": [
+            {
+              "id": "ejercicio-1",
+              "title": "Ejercicio 1"
+            },
+            {
+              "id": "ejercicio-2",
+              "title": "Ejercicio 2"
+            },
+            {
+              "id": "ejercicio-3",
+              "title": "Ejercicio 3"
+            }
+          ]
+        },
+        {
+          "to": "/2c-2025-2P",
+          "label": "2c-2025-2P",
+          "icon": "assignment",
+          "toc": [
+            {
+              "id": "ejercicio-1",
+              "title": "Ejercicio 1"
+            },
+            {
+              "id": "ejercicio-2",
+              "title": "Ejercicio 2"
             }
           ]
         }
