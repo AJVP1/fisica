@@ -59,6 +59,44 @@ const C220252P = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p>
+          Para el primer item, como solo actua la fuerza peso, descomponiendola,
+          y sabiendo que solo actua en la dirección del movimiento:
+        </p>
+        <p>{`$$a = g \\sin(25°) = 9.8 \\frac{m}{s^2} * \\sin(25°) = 4.14 \\frac{m}{s^2}$$`}</p>
+        <p>Para el segundo item, aplicamos la conservación de la energía:</p>
+        <p>{`$$E_{p1} = E_{k2}$$`}</p>
+        <p>{`$$mgh = \\frac{1}{2} mv^2$$`}</p>
+        <p>{`$$v = \\sqrt{2gh}$$`}</p>
+        <p>{`$$v = \\sqrt{2 * 9.8 \\frac{m}{s^2} * 2,31 m} = 6.73 \\frac{m}{s}$$`}</p>
+        <p>
+          Para el tercer item, calculamos la energía potencial gravitatoria:
+        </p>
+        <p>{`$$E_p = mgh = 400 kg * 9.8 \\frac{m}{s^2} * 3.00 m = 11760 J$$`}</p>
+        <p>Para el cuarto item, aplicamos la conservación de la energía:</p>
+        <p>{`$$E_{p1} = E_{k4}$$`}</p>
+        <p>{`$$11760 J = \\frac{1}{2} mv^2$$`}</p>
+        <p>{`$$v = \\sqrt{2gh}$$`}</p>
+        <p>{`$$v = \\sqrt{2 * 9.8 \\frac{m}{s^2} * 5.31 m} = 10.18 \\frac{m}{s}$$`}</p>
+        <p>
+          Para el quinto item, como la energía se conserva, entonces la energía
+          cinética es igual a la energía potencial gravitatoria:
+        </p>
+        <p>{`$$E_k = E_p = 11760 J$$`}</p>
+        <p>
+          Para el último item, descomponemos la velocidad con la que sale del
+          techo en sus componentes:
+        </p>
+        <p>{`$$v_x = v \\cos(25°) = 6.73 \\frac{m}{s} * \\cos(25°) = 6.09 \\frac{m}{s}$$`}</p>
+        <p>{`$$v_y = v \\sin(25°) = 6.73 \\frac{m}{s} * \\sin(25°) = 2.84 \\frac{m}{s}$$`}</p>
+        <p>
+          Con esta velocidad vertical, podemos calcular cuanto tardó en llegar
+          al suelo:
+        </p>
+        <p>{`$$ 0 = 3.00 m - 2.84 \\frac{m}{s} * t - \\frac{1}{2} * 9.8 \\frac{m}{s^2} * t^2 $$`}</p>
+        <p>{`$$ t = 0.544 s $$`}</p>
+        <p>Ahora podemos calcular la distancia horizontal:</p>
+        <p>{`$$x = v_x * t = 6.09 \\frac{m}{s} * 0.544 s = 3.32 m$$`}</p>
 
         <h2
           className="text-2xl font-bold mt-12 mb-4 text-(--color-primary) scroll-mt-20"
@@ -97,6 +135,28 @@ const C220252P = () => {
         <h3 className="text-xl font-bold mt-10 mb-3 text-[#141414] scroll-mt-20">
           Solución
         </h3>
+        <p>Para el primer item calculamos la fuerza de rozamiento:</p>
+        <p>{`$$F_r = \\mu_d N = 0.55 * 1400 kg * 9.8 m/s² = 7546 N$$`}</p>
+        <p>
+          Luego, aplicamos la segunda ley de Newton para encontrar la
+          aceleración:
+        </p>
+        <p>{`$$F = ma$$`}</p>
+        <p>{`$$a = \\frac{F}{m} = \\frac{-7546 N}{1400 kg} = -5.39 \\frac{m}{s^2}$$`}</p>
+        <p>Ahora, buscamos cuanto tiempo tardo en detenerse:</p>
+        <p>{`$$v = v_0 + at$$`}</p>
+        <p>{`$$0 = 22.22 \\frac{m}{s} + (-5.39 \\frac{m}{s^2}) * t$$`}</p>
+        <p>{`$$t = \\frac{22.22 \\frac{m}{s}}{5.39 \\frac{m}{s^2}} = 4.12 s$$`}</p>
+        <p>Finalmente, calculamos la distancia patinada:</p>
+        <p>{`$$x = v_0 t + \\frac{1}{2} at^2$$`}</p>
+        <p>{`$$x = 22.22 \\frac{m}{s} * 4.12 s + \\frac{1}{2} * (-5.39 \\frac{m}{s^2}) * (4.12 s)^2 = 45.8 m$$`}</p>
+        <p>
+          Para el tercer item, calculamos el trabajo realizado por la fuerza de
+          rozamiento:
+        </p>
+        <p>{`$$W = F_r * x = -7546 N * 45.8 m = -345,000 J$$`}</p>
+        <p>Para el cuarto item, calculamos la potencia media de frenado:</p>
+        <p>{`$$P = \\frac{W}{t} = \\frac{345,000 J}{4.12 s} = 83,740 W$$`}</p>
       </MathJax>
     </DocsLayout>
   );
