@@ -73,20 +73,19 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       {isOpen && (
         <div className="md:hidden fixed inset-0 z-50 flex">
           {/* Backdrop */}
-          <div
-            className="absolute inset-0 bg-black/50"
-            onClick={onClose}
-          />
+          <div className="absolute inset-0 bg-black/50" onClick={onClose} />
           {/* Drawer */}
           <aside className="sidebar-scroll relative w-72 max-w-[85vw] bg-white h-full overflow-y-auto p-6 space-y-8 shadow-xl">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#757575]">Navegación</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#757575]"></span>
               <button
                 onClick={onClose}
                 className="p-1 rounded-lg hover:bg-[#f2f2f2] transition-colors"
                 aria-label="Cerrar menú"
               >
-                <span className="material-symbols-outlined text-[#757575]">close</span>
+                <span className="material-symbols-outlined text-[#757575]">
+                  close
+                </span>
               </button>
             </div>
             <SidebarContent onClose={onClose} />
